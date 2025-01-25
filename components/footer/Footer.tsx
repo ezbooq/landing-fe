@@ -70,9 +70,9 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-          <div>
+          <div className="hidden sm:block">
             <Image src="/logo.svg" alt="Logo" width={120} height={50} />
           </div>
           {columns.map((column) => (
@@ -84,11 +84,30 @@ const Footer: React.FC = () => {
           ))}
         </div>
         <div className="border-t border-black mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-sm text-black flex gap-5">
+          <div className="text-sm text-black flex flex-col sm:flex-row items-center gap-5">
+          <div>
+            <Image src="/logo.svg" alt="Logo" width={120} height={50} className="sm:hidden"/>
+          </div>
+            <p>
             &copy; {date.getFullYear()} EZBooq. All rights reserved.{" "}
-            <NavLink href="/industries" className="underline underline-offset-2">Industries</NavLink>
-            <NavLink href="/contact-us" className="underline underline-offset-2">Contact Us</NavLink>
-            <NavLink href="/sign-up" className="underline underline-offset-2">Signup</NavLink>
+            </p>
+            <div className="flex gap-4">
+              <NavLink
+                href="/industries"
+                className="underline underline-offset-2"
+              >
+                Industries
+              </NavLink>
+              <NavLink
+                href="/contact-us"
+                className="underline underline-offset-2"
+              >
+                Contact Us
+              </NavLink>
+              <NavLink href="/sign-up" className="underline underline-offset-2">
+                Signup
+              </NavLink>
+            </div>
           </div>
           <div className="flex space-x-4 mt-4 md:mt-0">
             {socialIcons.map((social, index) => (

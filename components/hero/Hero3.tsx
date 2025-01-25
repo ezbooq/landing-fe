@@ -60,7 +60,7 @@ const Hero3: React.FC = () => {
                 alt="customer-image"
                 width={500}
                 height={500}
-                className="rounded-full object-cover h-20 w-20"
+                className="rounded-full object-cover h-14 w-14"
               />
               <div className="flex flex-col justify-start items-start">
                 <p className="text-sm font-semibold">
@@ -77,7 +77,7 @@ const Hero3: React.FC = () => {
               alt="customer-logo"
               width={500}
               height={500}
-              className="object-cover w-40"
+              className="object-cover w-28"
             />
           </div>
           <p className="text-black text-sm sm:text-base">

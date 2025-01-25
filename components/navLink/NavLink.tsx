@@ -1,4 +1,7 @@
+"use client"
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type NavLinkProps = {
     href: string;
@@ -7,8 +10,10 @@ type NavLinkProps = {
 }
 
 const NavLink: React.FC<NavLinkProps> = ({ href, children , className = ''}) => {
+    const pathName = usePathname();
+    const isActive = pathName === href;
     return (
-        <Link href={href} className={`text-black text-xs font-normal hover:text-primary transition active:text-primary ${className}`}>
+        <Link href={href} className={`${isActive ? 'text-primary' : 'text-black'} text-xs font-normal hover:text-primary transition ${className}`}>
             {children}
         </Link>
     )
