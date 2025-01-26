@@ -1,8 +1,8 @@
-import Features from "@/components/feature/Features";
-import Hero from "@/components/hero/Hero";
-import Hero2 from "@/components/hero/Hero2";
-import Hero3 from "@/components/hero/Hero3";
-import Team from "@/components/team/Team";
+import Features from "@/components/section/home/feature/Features";
+import Hero from "@/components/section/home/hero/Hero";
+import Hero2 from "@/components/section/home/hero/5stars";
+import Review from "@/components/section/home/review/Review";
+import Team from "@/components/section/home/team/Team";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <Hero2 />
         <Features />
         <Team />
-        <Hero3 />
+        <Review />
       </div>
     </main>
   );

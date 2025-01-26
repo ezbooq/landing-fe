@@ -6,7 +6,7 @@ const NavMenu: React.FC = () => {
       <NavLink href="/">Home</NavLink>
       <NavLink href="/industries">Industries</NavLink>
       <NavLink href="/contact-us">Contact Us</NavLink>
-      <NavLink href="/sign-up">Signup</NavLink>
+      {/* <NavLink href="/sign-up">Signup</NavLink> */}
     </nav>
   );
 }

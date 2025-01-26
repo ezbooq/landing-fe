@@ -5,7 +5,7 @@ import { useState } from "react";
 import { IoMdStar } from "react-icons/io";
 import { motion } from "motion/react";
 
-const Hero3: React.FC = () => {
+const Review: React.FC = () => {
   const customers = [
     {
       name: "John Doe",
@@ -105,4 +105,4 @@ const Hero3: React.FC = () => {
   );
 };
 
-export default Hero3;
+export default Review;

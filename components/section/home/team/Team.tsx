@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "../button/Button";
+import Button from "../../../button/Button";
 import TeamCard from "./TeamCard";
 
 const Team: React.FC = () => {
