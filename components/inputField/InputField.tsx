@@ -1,26 +1,24 @@
 "use client";
 
-interface InputFieldProps {
+type InputFieldProps = {
   label?: string;
-  type?: string; // "text", "textarea", etc.
+  type?: string;
+  register: any;
   placeholder?: string;
-  value: string;
+  value?: string;
   name?: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
-  onBlur?: (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
   errorMessage?: string;
   className?: string;
   disabled?: boolean;
-}
+};
 
 const InputField: React.FC<InputFieldProps> = ({
   label,
   type = "text",
+  register,
   placeholder = "",
   value,
   name,
-  onChange,
-  onBlur,
   errorMessage,
   className = "",
   disabled = false,
@@ -28,21 +26,17 @@ const InputField: React.FC<InputFieldProps> = ({
   return (
     <div className={`flex flex-col w-full ${className}`}>
       {label && (
-        <label
-          htmlFor={name}
-          className="mb-1 text-sm font-medium text-black"
-        >
+        <label htmlFor={name} className="mb-1 text-sm font-medium text-black">
           {label}
         </label>
       )}
       {type === "textarea" ? (
         <textarea
+          {...register(name)}
           id={name}
           name={name}
           placeholder={placeholder}
           value={value}
-          onChange={onChange}
-          onBlur={onBlur}
           disabled={disabled}
           className={`px-4 py-2 border rounded-lg focus:outline-none focus:border-none focus:ring-2 focus:ring-primary ${
             errorMessage ? "border-red-500 " : "border-black"
@@ -51,13 +45,12 @@ const InputField: React.FC<InputFieldProps> = ({
         />
       ) : (
         <input
+          {...register(name)}
           id={name}
           name={name}
           type={type}
           placeholder={placeholder}
           value={value}
-          onChange={onChange}
-          onBlur={onBlur}
           disabled={disabled}
           className={`px-4 py-2 border rounded-lg focus:outline-none focus:border-none focus:ring-2 focus:ring-primary ${
             errorMessage ? "border-red-500 " : "border-black"

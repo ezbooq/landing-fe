@@ -2,7 +2,7 @@ type ButtonProps = {
   children: React.ReactNode;
   type?: "button" | "submit" | "reset";
   variant?: "solid" | "outline";
-  onClick: () => void;
+  onClick?: () => void;
   className?: string;
 };
 

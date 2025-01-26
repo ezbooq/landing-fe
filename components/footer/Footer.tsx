@@ -59,11 +59,11 @@ const Footer: React.FC = () => {
   ];
 
   const socialIcons = [
-    { icon: <FaFacebook />, href: "#" },
-    { icon: <FaInstagram />, href: "#" },
-    { icon: <FaXTwitter />, href: "#" },
-    { icon: <FaLinkedin />, href: "#" },
-    { icon: <FaYoutube />, href: "#" },
+    { icon: <FaFacebook size={17}/>, href: "#" },
+    { icon: <FaInstagram size={17}/>, href: "#" },
+    { icon: <FaXTwitter size={17}/>, href: "#" },
+    { icon: <FaLinkedin size={17}/>, href: "#" },
+    { icon: <FaYoutube size={17}/>, href: "#" },
   ];
 
   const date = new Date();

@@ -1,42 +1,44 @@
 "use client";
 
-import React, { useState } from "react";
 import InputField from "@/components/inputField/InputField";
 import Image from "next/image";
 import Button from "@/components/button/Button";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useToast } from "@/hooks/useToast";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    message: "",
-    isAgreed: false,
-  });
-  const [errors, setErrors] = useState({
-    username: "",
-    email: "",
-    message: "",
+  const formSchema = z.object({
+    name: z.string().nonempty("Name is required"),
+    email: z
+      .string()
+      .email("Invalid email address")
+      .nonempty("Email is required"),
+    message: z.string().nonempty("Message is required"),
+    isAgreed: z
+      .boolean()
+      .refine((value) => value === true, {
+        message: "You must agree to the terms",
+      }),
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev) => ({ ...prev, [name]: "" })); // Clear errors on change
-  };
+  type FormData = z.infer<typeof formSchema>;
+  const { showToast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.username) {
-      setErrors((prev) => ({ ...prev, username: "Username is required" }));
-    }
-    if (!formData.email) {
-      setErrors((prev) => ({ ...prev, email: "Email is required" }));
-    }
-    if (!formData.message) {
-      setErrors((prev) => ({ ...prev, message: "Message is required" }));
-    }
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+  });
+
+  const onSubmit = (data: FormData) => {
+    localStorage.setItem("formData", JSON.stringify(data));
+    showToast("Form submitted successfully!", "success");
+    reset();
   };
 
   return (
@@ -48,52 +50,60 @@ const ContactForm = () => {
         }}
       ></div>
       <div className="grid grid-cols-5 h-screen items-center max-w-7xl mx-auto px-5 gap-10">
+        {/* {success && (
+          <CustomToast
+            message="Form submitted successfully"
+            type="success"
+            onClose={() => {}}
+          />
+        )} */}
         <form
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmit(onSubmit)}
           className="space-y-4 w-full col-span-5 lg:col-span-2 "
         >
           <h1 className="text-4xl">Contact us</h1>
           <p>Fill out the form below to contact us</p>
           <InputField
-            label="Username"
-            name="username"
-            value={formData.username}
-            placeholder="Enter your username"
-            onChange={handleChange}
-            errorMessage={errors.username}
+            register={register}
+            label="Name"
+            name="name"
+            placeholder="Enter your name"
+            errorMessage={errors.name?.message}
           />
           <InputField
+            register={register}
             label="Email"
             type="email"
             name="email"
-            value={formData.email}
             placeholder="Enter your email"
-            onChange={handleChange}
-            errorMessage={errors.email}
+            errorMessage={errors.email?.message}
           />
           <InputField
+            register={register}
             label="Message"
             name="message"
             type="textarea"
-            value={formData.message}
+            // value={FormData.message}
             placeholder="Type your message..."
-            onChange={handleChange}
-            errorMessage={errors.message}
+            errorMessage={errors.message?.message}
           />
-          <input
-            type="checkbox"
-            name="subscribe"
-            id="subscribe"
-            checked={formData.isAgreed}
-            onChange={() =>
-              setFormData((prev) => ({ ...prev, isAgreed: !prev.isAgreed }))
-            }
-            className="border border-black"
-            required
-          />{" "}
-          I accept the terms
-          <br />
-          <Button type="submit" variant="solid" onClick={() => {}}>
+          <div className="flex items-center gap-2">
+            <input
+              {...register("isAgreed")}
+              type="checkbox"
+              id="subscribe"
+              // checked={FormData.isAgreed}
+              className="border border-black"
+            />{" "}
+            <div className="text-sm text-black">I accept the terms</div>
+            {errors.isAgreed && (
+              <span className="mt-1 text-sm text-red-500">
+                {errors.isAgreed?.message}
+              </span>
+            )}
+          </div>
+
+          <Button type="submit" variant="solid">
             Submit
           </Button>
         </form>
