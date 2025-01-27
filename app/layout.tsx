@@ -8,8 +8,8 @@ import { ToastProvider } from "@/hooks/useToast";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["500", "700"],
-  display: 'swap'
+  weight: ["500", "600"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,12 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.className} antialiased`}
-      ><ToastProvider>
-        <Header />
-        {children}
-        <Footer />
+      <body className={`${poppins.className} antialiased`}>
+        <ToastProvider>
+          <Header />
+          {children}
+          <Footer />
         </ToastProvider>
       </body>
     </html>
