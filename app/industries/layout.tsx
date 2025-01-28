@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ezbooq industries",
+  title: "Ezbooq | Industries",
   description: "Industries page for Ezbooq",
 };
 
