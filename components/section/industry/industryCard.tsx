@@ -4,9 +4,10 @@ import Link from "next/link";
 type IndustryCardProps = {
   title: string;
   image: string;
+  slug?: string;
 };
 
-const IndustryCard: React.FC<IndustryCardProps> = ({ title, image }) => {
+const IndustryCard: React.FC<IndustryCardProps> = ({ title, image, slug}) => {
   return (
     <div className="relative  w-full h-60">
       <Image
@@ -17,7 +18,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({ title, image }) => {
         width={1000}
       />
       <div className="absolute bottom-2 left-2">
-        <Link href={`/industries/${title}`}>
+        <Link href={`/industries/${slug}`}>
           <button className="flex items-center justify-center px-2 sm:px-4 py-2 bg-white text-black text-sm font-semibold rounded-full shadow-md">
             <div className="truncate"> 
             {title}
