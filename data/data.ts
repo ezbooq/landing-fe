@@ -92,6 +92,7 @@ export const Industries = [
   {
     id: "4",
     title: "Carpet Cleaning",
+    slug: "carpet-cleaning",
     image: "/Carpet cleaning.jpg",
     description:
       "Carpet cleaning is done to remove dirt, stains, and allergens from carpets.",
@@ -176,6 +177,7 @@ export const Industries = [
   {
     id: "7",
     title: "Pool Cleaning",
+    slug: "pool-cleaning",
     image: "/Carpet cleaning.jpg",
     description:
       "Pool cleaning is the process of removing dirt, debris, and other impurities from a pool.",

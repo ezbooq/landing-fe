@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   className,
 }) => {
   const baseStyles =
-    "px-4 py-2 rounded-md text-sm transition ease-in-out delay-150 hover:scale-110";
+    "px-4 py-2 rounded-md text-sm transition ease-in-out delay-150 hover:scale-105 md:hover:scale-110";
   const variantStyles =
     variant === "solid"
       ? `${baseStyles} bg-primary text-white`
