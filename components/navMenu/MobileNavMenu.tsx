@@ -27,7 +27,7 @@ const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
         onClick={() => setIsMobileNavOpen(false)}
         className="absolute top-4 right-4 text-black"
       >
-        <IoMdClose size={30} />
+        <IoMdClose size={20} />
       </button>
 
       {/* Navigation Links */}

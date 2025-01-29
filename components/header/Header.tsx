@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   console.log(isMobileNavOpen)
   return (
-    <header className="relative w-full items-center bg-secondary shadow-md z-50">
+    <header className="sticky w-full items-center bg-secondary shadow-md top-0 z-50">
       <div className="flex justify-between items-center p-4 max-w-7xl mx-auto">
         <Image src="/logo.svg" alt="Logo" width={120} height={50} />
 
