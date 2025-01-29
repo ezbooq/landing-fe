@@ -1,4 +1,4 @@
-import IndustryCard from "@/components/section/industry/industryCard";
+import IndustryCard from "@/components/section/industry/IndustryCard";
 import { Industries as IndustryData } from "@/data/data";
 
 export default function Industries() {

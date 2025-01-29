@@ -1,7 +1,8 @@
 "use client";
 
+import Toast from "@/components/customToast/Toast";
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import CustomToast from "@/components/customToast/customToast";
+
 
 type ToastType = "success" | "error" | "info" | "warning";
 
@@ -34,7 +35,7 @@ export const ToastProvider: React.FC<{ children: ReactNode }> = ({
     <ToastContext.Provider value={{ showToast }}>
       {children}
       {toast && (
-        <CustomToast
+        <Toast
           message={toast.message}
           type={toast.type}
           duration={toast.duration}

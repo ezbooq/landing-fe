@@ -10,7 +10,7 @@ type ToastProps = {
   duration?: number;
 }
 
-const CustomToast: React.FC<ToastProps> = ({
+const Toast: React.FC<ToastProps> = ({
   message,
   type = "info",
   onClose,
@@ -55,4 +55,4 @@ const CustomToast: React.FC<ToastProps> = ({
   );
 };
 
-export default CustomToast;
+export default Toast;

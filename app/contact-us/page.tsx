@@ -1,11 +1,11 @@
-import ContactForm from "@/components/section/contact/contactForm/contactForm";
+import ContactForm from "@/components/section/contact/contactForm/ContactForm";
 import FAQ from "@/components/section/contact/FAQ/FAQ";
 
 export default function ContactUs() {
   return (
-    <main>
+    <div>
       <ContactForm />
       <FAQ />
-    </main>
+    </div>
   );
 }
