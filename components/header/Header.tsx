@@ -27,7 +27,7 @@ const Header: React.FC = () => {
         />
 
         <Button onClick={() => {}} className="hidden sm:inline">
-          Login
+          Register Now
         </Button>
 
         <RxTextAlignJustify
