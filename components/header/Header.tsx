@@ -9,6 +9,7 @@ import { useState } from "react";
 import NavLink from "../navLink/NavLink";
 import { Industries as IndustryData } from "@/data/data";
 import MobileNavMenu from "../navMenu/MobileNavMenu";
+import Banner from "../banner/Banner";
 
 const Header: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -16,6 +17,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="sticky w-full items-center bg-secondary shadow-md top-0 z-50">
+      <Banner />
       <div className="flex justify-between items-center p-4 max-w-7xl mx-auto">
         <Image src="/logo.svg" alt="Logo" width={120} height={50}/>
 

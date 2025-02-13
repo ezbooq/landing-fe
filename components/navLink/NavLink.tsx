@@ -27,7 +27,7 @@ const NavLink: React.FC<NavLinkProps> = ({
       onClick={onClick}
       className={`${
         isActive ? "text-primary" : "text-black"
-      } text-xs font-medium hover:text-green-700 ${className}`}
+      } text-sm font-medium hover:text-green-700 ${className}`}
     >
       {children}
     </Link>
