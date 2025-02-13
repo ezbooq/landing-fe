@@ -16,9 +16,8 @@ const ContactForm = () => {
   const formSchema = z.object({
     name: z.string().nonempty("Name is required"),
     email: z
-      .string()
-      .email("Invalid email address")
-      .nonempty("Email is required"),
+      .string().nonempty("Email is required")
+      .email("Invalid email address"),
     message: z.string().nonempty("Message is required"),
     isAgreed: z.boolean().refine((value) => value === true, {
       message: "You must agree to the terms",
