@@ -1,6 +1,11 @@
 "use client";
 
+import { LiaWarehouseSolid } from "react-icons/lia";
 import FeatureCard from "./FeatureCard";
+import FeatureCard2 from "./FeatureCard2";
+import { MdOutlineDashboardCustomize } from "react-icons/md";
+import { LuBox } from "react-icons/lu";
+import { PiStarFourBold } from "react-icons/pi";
 
 const Features: React.FC = () => {
   const features = [
@@ -54,26 +59,48 @@ const Features: React.FC = () => {
     },
   ];
 
-  // const [selectedId, setSelectedId] = useState("1");
-  // const [selectedImage, setSelectedImage] = useState(features[0].image);
-
-  // const handleSelect = (id: string) => {
-  //   setSelectedId(id);
-  //   const image = features.find((feature) => feature.id === id)?.image;
-  //   setSelectedImage(image || features[0].image);
-  // };
+  const features2 = [
+    {
+      id: "01",
+      title: "Inventory for SME business",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
+      icon: <LiaWarehouseSolid />,
+    },
+    {
+      id: "02",
+      title: "Simplified booking system",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
+      icon: <MdOutlineDashboardCustomize />,
+    },
+    {
+      id: "03",
+      title: "Campaign Management",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
+      icon: <LuBox />,
+    },
+    {
+      id: "04",
+      title: "Sales fast AI Chat bot",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
+      icon: <PiStarFourBold />,
+    },
+  ];
 
   return (
-    <div className="max-w-7xl mx-auto p-5 md:p-5 xl:p-0">
-      <div>
-        <p className="text-lg sm:text-base text-primary mb-5 text-center">
+    <div className="max-w-7xl mx-auto px-5 py-10 md:px-5 xl:px-0">
+      <div className="text-center">
+        <p className="text-lg sm:text-xl text-primary mb-5">
           Better benefits for your business
         </p>
-        <h1 className="text-2xl sm:text-4xl text-black text-center mb-6">
+        <h1 className="text-2xl sm:text-4xl text-black mb-6">
           Plan, Manage, Automate, & Grow
         </h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center gap-5 mb-16">
         {features.map((feature) => (
           <FeatureCard
             key={feature.id}
@@ -85,15 +112,22 @@ const Features: React.FC = () => {
           />
         ))}
       </div>
-      {/* <div className="hidden sm:inline">
-          <Image
-            src={selectedImage}
-            alt="feature-image"
-            className="w-full rounded-lg shadow-lg object-fill"
-            width={400}
-            height={300}
+      <div className="text-center">
+        <p className="text-lg sm:text-xl text-primary mb-5">Features</p>
+        <h1 className="text-2xl sm:text-4xl text-black mb-6">
+          Powerful Features to Elevte Your workflow
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center gap-5 mb-14">
+        {features2.map((feature) => (
+          <FeatureCard2
+            key={feature.id}
+            icon={feature.icon}
+            title={feature.title}
+            description={feature.description}
           />
-        </div> */}
+        ))}
+      </div>
     </div>
   );
 };

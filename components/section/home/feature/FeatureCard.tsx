@@ -1,6 +1,6 @@
 import { FaCircle } from "react-icons/fa";
 
-type FeatureCArdProps = {
+type FeatureCardProps = {
   id: string;
   title: string;
   description: string;
@@ -8,7 +8,7 @@ type FeatureCArdProps = {
   className?: string;
 };
 
-const FeatureCard: React.FC<FeatureCArdProps> = ({
+const FeatureCard: React.FC<FeatureCardProps> = ({
   id,
   title,
   description,
@@ -17,7 +17,7 @@ const FeatureCard: React.FC<FeatureCArdProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col justify-between gap-3 cursor-pointer ${className} border border-gray-200 px-4 py-8 rounded-lg min-h-[28rem]`}
+      className={`flex flex-col justify-between gap-3 ${className} border border-gray-200 px-4 py-8 rounded-lg min-h-[28rem]`}
     >
       <div className="text-sm font-semibold px-5 py-1 w-9 h-9 flex justify-center items-center rounded-md bg-white">
         {id}
