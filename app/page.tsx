@@ -1,8 +1,8 @@
 import Features from "@/components/section/home/feature/Features";
 import Hero from "@/components/section/home/hero/Hero";
 import Hero2 from "@/components/section/home/hero/5stars";
-import Review from "@/components/section/home/review/Review";
 import Team from "@/components/section/home/team/Team";
+import { Map } from "@/components/section/home/map/Map";
 
 export default function Home() {
   return (
@@ -12,7 +12,8 @@ export default function Home() {
         <Hero2 />
         <Features />
         <Team />
-        <Review />
+        {/* <Review /> */}
+        <Map />
       </div>
     </main>
   );
