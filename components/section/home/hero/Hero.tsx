@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
       <div className="relative text-center mb-8 mt-8 sm:mt-4 max-w-4xl mx-auto sm:p-10 px-5">
         {/* Content */}
         <h1 className="relative text-2xl sm:text-4xl font-medium mb-4 z-10">
-          Empower Your Business with Ezbooq
+          Empower Your Business with <span className="text-primary">Ezbooq</span>
         </h1>
         <p className="relative text-black text-sm sm:text-base mb-6 z-10">
           Ezbooq is in development to revolutionize booking, customer

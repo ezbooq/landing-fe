@@ -33,7 +33,7 @@ const NavMenu: React.FC<NavMenuProps> = ({
       <NavLink href="/contact-us" onMouseEnter={() => setIsDropdownOpen(false)}>
         Contact Us
       </NavLink>
-      {/* <NavLink href="/sign-up">Signup</NavLink> */}
+      <NavLink href="/affiliate-marketer">Join Affiliate Marketer</NavLink>
     </nav>
   );
 };

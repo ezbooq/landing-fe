@@ -44,7 +44,7 @@ const Team: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-12">
           <h1 className="text-left text-2xl sm:text-4xl font-medium text-black">
-            A platform built for everyone on the team
+            One Platform For Everyone In Your Team, Easy & Smart
           </h1>
 
           <Button
@@ -54,7 +54,7 @@ const Team: React.FC = () => {
             }}
             className="hidden sm:inline"
           >
-            Learn more
+            Watch Now
           </Button>
         </div>
         <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto scrollbar-hide py-4">

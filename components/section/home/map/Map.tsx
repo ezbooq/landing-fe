@@ -1,5 +1,4 @@
-"use client";
-import { WorldMap } from "@/components/ui/world-map";
+import WorldMap from "@/components/ui/world-map";
 
 export function Map() {
   return (
