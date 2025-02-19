@@ -3,6 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import FooterColumn from "./FooterColumn";
 import Image from "next/image";
 import NavLink from "../navLink/NavLink";
+import Newsletter from "../newsletter/Newsletter";
 
 const Footer: React.FC = () => {
   const columns = [
@@ -40,18 +41,19 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex justify-between gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
+        <Newsletter />
+        <div className="flex justify-between gap-6 border-t border-gray-300 pt-6">
           <div className="">
             <Image src="/logo.svg" alt="Logo" width={120} height={50} />
             <h4 className="font-bold mt-3">Address</h4>
-            <p className="font-extralight">
+            <p className="font-extralight text-sm">
               New York, USA <br />
               Melbourine, AU <br />
               Colombo, SL
             </p>
             <h2 className="font-bold mt-3">Contact</h2>
-            <p className="font-thin text-base">
+            <p className="font-thin text-sm">
               (+56) 0565 48949 <br />
               support@ezbooq.com <br />
             </p>
@@ -77,7 +79,7 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="border-t border-black mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-300 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-black flex flex-col sm:flex-row items-center justify-center mx-auto gap-5">
             <p>&copy; {date.getFullYear()} EZBooq. All rights reserved. </p>
             <div className="flex gap-4">

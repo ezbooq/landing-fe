@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="relative mt-8 flex items-center justify-center z-10">
           <Image
-            src="/Dashboard.png"
+            src="/Dashboard.svg"
             alt="dashboard"
             className="w-full rounded-lg shadow-lg"
             height={400}

@@ -104,7 +104,7 @@ const ContactForm = () => {
           </form>
           <div className="hidden lg:inline col-span-3 z-10">
             <Image
-              src="/Dashboard.png"
+              src="/Dashboard.svg"
               alt="dashboard"
               className="w-full rounded-lg shadow-lg"
               height={800}

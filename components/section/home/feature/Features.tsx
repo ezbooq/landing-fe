@@ -14,7 +14,7 @@ const Features: React.FC = () => {
       title: "Inventory for SME business",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
-      image: "/Dashboard.png",
+      image: "/Dashboard.svg",
       options: ["Smart inventory", "Smart tracking", "Smart invoices"],
       className: "bg-[#FFFBF2]",
     },
