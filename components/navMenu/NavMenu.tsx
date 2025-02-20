@@ -12,7 +12,7 @@ const NavMenu: React.FC<NavMenuProps> = ({
 }) => {
   return (
     <nav
-      className="items-center space-x-8 hidden sm:flex"
+      className="items-center space-x-8 hidden md:flex mx-2"
       onClick={() => setIsDropdownOpen(false)}
     >
       <NavLink href="/" onMouseEnter={() => setIsDropdownOpen(false)}>
@@ -34,6 +34,7 @@ const NavMenu: React.FC<NavMenuProps> = ({
         Contact Us
       </NavLink>
       <NavLink href="/affiliate-marketer">Join Affiliate Marketer</NavLink>
+      <NavLink href="/news">News & Update</NavLink>
     </nav>
   );
 };

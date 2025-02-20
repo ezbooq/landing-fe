@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
+      <div className="max-w-7xl mx-auto px-4 py-8">
         <Newsletter />
         <div className="flex justify-between gap-6 border-t border-gray-300 pt-6">
           <div className="">

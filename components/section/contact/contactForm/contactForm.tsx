@@ -51,7 +51,7 @@ const ContactForm = () => {
             backgroundImage: "url('/backgroundCircleLeft.png')",
           }}
         ></div>
-        <div className="grid grid-cols-5 h-screen items-center max-w-7xl mx-auto p-4 gap-10">
+        <div className="grid grid-cols-5 items-center max-w-7xl mx-auto px-4 py-8 gap-10">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="space-y-4 w-full col-span-5 lg:col-span-2 "
