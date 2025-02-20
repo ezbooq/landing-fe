@@ -15,8 +15,8 @@ const NavMenu: React.FC<NavMenuProps> = ({
       className="items-center space-x-8 hidden md:flex mx-2"
       onClick={() => setIsDropdownOpen(false)}
     >
-      <NavLink href="/" onMouseEnter={() => setIsDropdownOpen(false)}>
-        Home
+      <NavLink href="/why-us" onMouseEnter={() => setIsDropdownOpen(false)}>
+        Why Us
       </NavLink>
 
       <NavLink href="/industries" onMouseEnter={() => setIsDropdownOpen(true)}>
@@ -30,11 +30,11 @@ const NavMenu: React.FC<NavMenuProps> = ({
         </div>
       </NavLink>
 
-      <NavLink href="/contact-us" onMouseEnter={() => setIsDropdownOpen(false)}>
+      {/* <NavLink href="/contact-us" onMouseEnter={() => setIsDropdownOpen(false)}>
         Contact Us
-      </NavLink>
+      </NavLink> */}
       <NavLink href="/affiliate-marketer">Join Affiliate Marketer</NavLink>
-      <NavLink href="/news">News & Update</NavLink>
+      <NavLink href="/news">What&apos;s News</NavLink>
     </nav>
   );
 };

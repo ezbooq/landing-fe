@@ -19,9 +19,9 @@ const ContactForm = () => {
       .string().nonempty("Email is required")
       .email("Invalid email address"),
     message: z.string().nonempty("Message is required"),
-    isAgreed: z.boolean().refine((value) => value === true, {
-      message: "You must agree to the terms",
-    }),
+    // isAgreed: z.boolean().refine((value) => value === true, {
+    //   message: "You must agree to the terms",
+    // }),
   });
 
   type FormData = z.infer<typeof formSchema>;
@@ -82,7 +82,7 @@ const ContactForm = () => {
               placeholder="Type your message..."
               errorMessage={errors.message?.message}
             />
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <input
                 {...register("isAgreed")}
                 type="checkbox"
@@ -96,7 +96,7 @@ const ContactForm = () => {
                   {errors.isAgreed?.message}
                 </span>
               )}
-            </div>
+            </div> */}
 
             <Button type="submit" variant="solid">
               Submit

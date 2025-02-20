@@ -19,8 +19,8 @@ const IndustryCard: React.FC<IndustryCardProps> = ({ title, image, slug}) => {
       />
       <div className="absolute bottom-2 left-2">
         <Link href={`/industries/${slug}`}>
-          <button className="flex items-center justify-center px-2 sm:px-4 py-2 bg-white text-black text-sm font-semibold rounded-full shadow-md">
-            <div className="truncate"> 
+          <button className="flex truncate items-center justify-center px-2 sm:px-4 py-2 bg-white text-black text-sm font-semibold rounded-full shadow-md">
+            <div className="line-clamp-2"> 
             {title}
             </div>
             <span className="text-sm ms-1">&rarr;</span>

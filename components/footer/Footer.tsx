@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import FooterColumn from "./FooterColumn";
 import Image from "next/image";
@@ -30,11 +30,12 @@ const Footer: React.FC = () => {
   ];
 
   const socialIcons = [
-    { icon: <FaFacebook size={17} />, href: "#" },
-    { icon: <FaInstagram size={17} />, href: "#" },
-    { icon: <FaXTwitter size={17} />, href: "#" },
-    { icon: <FaLinkedin size={17} />, href: "#" },
-    { icon: <FaYoutube size={17} />, href: "#" },
+    { icon: <FaFacebook size={19} />, href: "#" },
+    { icon: <FaInstagram size={19} />, href: "#" },
+    { icon: <FaTiktok size={19} />, href: "#" },
+    { icon: <FaYoutube size={19} />, href: "#" },
+    { icon: <FaLinkedin size={19} />, href: "#" },
+    { icon: <FaXTwitter size={19} />, href: "#" },
   ];
 
   const date = new Date();
