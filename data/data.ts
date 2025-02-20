@@ -3,7 +3,7 @@ export const Industries = [
     id: "1",
     title: "Car Detailing",
     slug: "car-detailing",
-    image: "/cardetailing.jpg",
+    image: ["/cardetailing.jpg", "/carwash.jpg"],
     description:
       "Car detailing is the act of performing a thorough cleaning, restoration, and finishing of a motor vehicle, to produce a show-quality cleanliness and polish.",
     features: [
@@ -33,7 +33,7 @@ export const Industries = [
     id: "2",
     title: "Car Wash",
     slug: "car-wash",
-    image: "/carwash.jpg",
+    image: ["/carwash.jpg"],
     description:
       "A car wash is a facility used to clean the exterior and, in some cases, the interior of motor vehicles.",
     features: [
@@ -63,7 +63,7 @@ export const Industries = [
     id: "3",
     title: "Pet Grooming",
     slug: "pet-grooming",
-    image: "/petgrooming.jpg",
+    image: ["/petgrooming.jpg"],
     description:
       "Pet grooming refers to both the hygienic care and cleaning of a dog, as well as a process by which a dog's physical appearance is enhanced for showing or other types of competition.",
     features: [
@@ -93,7 +93,7 @@ export const Industries = [
     id: "4",
     title: "Carpet Cleaning",
     slug: "carpet-cleaning",
-    image: "/Carpet cleaning.jpg",
+    image: ["/Carpet cleaning.jpg"],
     description:
       "Carpet cleaning is done to remove dirt, stains, and allergens from carpets.",
     features: [
@@ -123,7 +123,7 @@ export const Industries = [
     id: "5",
     title: "Home Cleaning",
     slug: "home-cleaning",
-    image: "/carcleaning.jpg",
+    image: ["/carcleaning.jpg"],
     description:
       "Home cleaning is the process of removing dirt, dust, and other impurities from a home.",
     features: [
@@ -152,7 +152,7 @@ export const Industries = [
     id: "6",
     title: "Pet Walker",
     slug: "pet-walker",
-    image: "/petwalking.jpeg",
+    image: ["/petwalking.jpeg"],
     description: "A pet walker is a professional who takes dogs for walks.",
     features: [
       {
@@ -178,7 +178,7 @@ export const Industries = [
     id: "7",
     title: "Pool Cleaning",
     slug: "pool-cleaning",
-    image: "/Carpet cleaning.jpg",
+    image: ["/Carpet cleaning.jpg"],
     description:
       "Pool cleaning is the process of removing dirt, debris, and other impurities from a pool.",
     features: [
@@ -208,7 +208,7 @@ export const Industries = [
     id: "8",
     title: "Lawn Care",
     slug: "lawn-care",
-    image: "/Carpet cleaning.jpg",
+    image: ["/Carpet cleaning.jpg"],
     description: "Lawn care is the process of maintaining a lawn.",
     features: [
       {
@@ -236,7 +236,97 @@ export const Industries = [
     id: "9",
     title: "Moving Business",
     slug: "moving-business",
-    image: "/Carpet cleaning.jpg",
+    image: ["/Carpet cleaning.jpg"],
+    description:
+      "A moving business is a company that helps people move from one location to another.",
+    features: [
+      {
+        name: "Packing",
+        description:
+          "Packing is the process of putting items into boxes and preparing them for transport.",
+      },
+      {
+        name: "Loading",
+        description:
+          "Loading is the process of putting items into a moving truck.",
+      },
+      {
+        name: "Transporting",
+        description:
+          "Transporting is the process of moving items from one location to another.",
+      },
+      {
+        name: "Unloading",
+        description:
+          "Unloading is the process of taking items out of a moving truck.",
+      },
+    ],
+  },
+  {
+    id: "10",
+    title: "Moving Business",
+    slug: "moving-business",
+    image: ["/Carpet cleaning.jpg"],
+    description:
+      "A moving business is a company that helps people move from one location to another.",
+    features: [
+      {
+        name: "Packing",
+        description:
+          "Packing is the process of putting items into boxes and preparing them for transport.",
+      },
+      {
+        name: "Loading",
+        description:
+          "Loading is the process of putting items into a moving truck.",
+      },
+      {
+        name: "Transporting",
+        description:
+          "Transporting is the process of moving items from one location to another.",
+      },
+      {
+        name: "Unloading",
+        description:
+          "Unloading is the process of taking items out of a moving truck.",
+      },
+    ],
+  },
+  {
+    id: "11",
+    title: "Moving Business",
+    slug: "moving-business",
+    image: ["/Carpet cleaning.jpg"],
+    description:
+      "A moving business is a company that helps people move from one location to another.",
+    features: [
+      {
+        name: "Packing",
+        description:
+          "Packing is the process of putting items into boxes and preparing them for transport.",
+      },
+      {
+        name: "Loading",
+        description:
+          "Loading is the process of putting items into a moving truck.",
+      },
+      {
+        name: "Transporting",
+        description:
+          "Transporting is the process of moving items from one location to another.",
+      },
+      {
+        name: "Unloading",
+        description:
+          "Unloading is the process of taking items out of a moving truck.",
+      },
+    ],
+  },
+  {
+    id: "12",
+    title: "Moving Business",
+    slug: "moving-business",
+    image: ["/Carpet cleaning.jpg"],
     description:
       "A moving business is a company that helps people move from one location to another.",
     features: [

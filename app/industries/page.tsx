@@ -16,7 +16,7 @@ export default function Industries() {
           <div key={industry.id}>
             <IndustryCard
               title={industry.title}
-              image={industry.image}
+              image={industry.image[0]}
               slug={industry.slug}
             />
           </div>

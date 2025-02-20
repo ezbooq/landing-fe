@@ -1,7 +1,7 @@
 import Button from "@/components/button/Button";
+import ImageSlider from "@/components/imageSlider/imageSlider";
 import Hero2 from "@/components/section/home/hero/5stars";
 import { Industries as IndustryData } from "@/data/data";
-import Image from "next/image";
 import { FaRegStar } from "react-icons/fa";
 
 type IndustryPageProps = {
@@ -38,13 +38,7 @@ const IndustryPage = async ({ params }: IndustryPageProps) => {
           </div>
         </div>
         <div className="z-10">
-          <Image
-            src={Industry.image}
-            alt="dashboard"
-            className="w-full rounded-lg shadow-lg"
-            height={800}
-            width={1000}
-          />
+          <ImageSlider images={Industry.image} />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-4 p-4 mt-8">
