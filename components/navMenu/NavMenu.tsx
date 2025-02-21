@@ -34,7 +34,7 @@ const NavMenu: React.FC<NavMenuProps> = ({
         Contact Us
       </NavLink> */}
       <NavLink href="/affiliate-marketer">Join Affiliate Marketer</NavLink>
-      <NavLink href="/news">What&apos;s News</NavLink>
+      <NavLink href="/news">What&apos;s New</NavLink>
     </nav>
   );
 };

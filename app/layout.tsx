@@ -8,7 +8,7 @@ import { ToastProvider } from "@/hooks/useToast";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["500", "600"],
+  weight: ["400","500", "600", "700"],
   display: "swap",
 });
 

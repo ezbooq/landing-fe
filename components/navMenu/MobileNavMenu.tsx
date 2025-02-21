@@ -35,6 +35,10 @@ const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
         <NavLink href="/" onClick={() => setIsMobileNavOpen(false)}>
           Home
         </NavLink>
+        <NavLink href="/why-us" onMouseEnter={() => setIsMobileNavOpen(false)}>
+          Why Us
+        </NavLink>
+
         <NavLink
           href="/industries"
           onClick={() => {
@@ -61,7 +65,12 @@ const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
                 {industry.title}
               </NavLink>
             ))}
-            <NavLink href={`/industries`} key={"all"} className="text-primary" onClick={() => setIsMobileNavOpen(false)}>
+            <NavLink
+              href={`/industries`}
+              key={"all"}
+              className="text-primary"
+              onClick={() => setIsMobileNavOpen(false)}
+            >
               View more...
             </NavLink>
           </div>
@@ -70,9 +79,15 @@ const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
           Contact Us
         </NavLink>
 
-        {/* Industries Dropdown */}
-
-        {/* Login Button */}
+        <NavLink
+          href="/affiliate-marketer"
+          onClick={() => setIsMobileNavOpen(false)}
+        >
+          Join Affiliate Marketer
+        </NavLink>
+        <NavLink href="/news" onClick={() => setIsMobileNavOpen(false)}>
+          What&apos;s New
+        </NavLink>
 
         <Button
           variant="solid"

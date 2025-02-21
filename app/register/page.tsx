@@ -87,36 +87,6 @@ export default function Register() {
               errorMessage={errors.companyName?.message}
             />
           </div>
-          <div className="col-span-2">
-            <InputField
-              register={register}
-              label="Company Name"
-              type="email"
-              name="companyName"
-            //   placeholder="Enter your email"
-              errorMessage={errors.companyName?.message}
-            />
-          </div>
-          <div className="col-span-2">
-            <InputField
-              register={register}
-              label="Company Name"
-              type="email"
-              name="companyName"
-            //   placeholder="Enter your email"
-              errorMessage={errors.companyName?.message}
-            />
-          </div>
-          <div className="col-span-2">
-            <InputField
-              register={register}
-              label="Company Name"
-              type="email"
-              name="companyName"
-            //   placeholder="Enter your email"
-              errorMessage={errors.companyName?.message}
-            />
-          </div>
         </div>
 
         <Button type="submit" variant="solid">
