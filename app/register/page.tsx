@@ -8,8 +8,17 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import InputField from "@/components/inputField/InputField";
 import Image from "next/image";
 import Button from "@/components/button/Button";
+import PhoneNumberInput from "@/components/phoneNumberInput/PhoneNumberInput";
+import { countries, countryCodes } from "@/utils/country";
+import { useState } from "react";
+import { Country } from "@/types/common";
+import dynamic from "next/dynamic";
+const SelectField = dynamic(() => import("@/components/selectField/SelectField"), { ssr: false });
 
 export default function Register() {
+  const [selectedCountryCode, setSelectedCountryCode] = useState<Country>(
+    countryCodes[126]
+  );
   const formSchema = z.object({
     firstname: z.string().nonempty("First name is required"),
     lastname: z.string().nonempty("Last name is required"),
@@ -23,7 +32,7 @@ export default function Register() {
       { message: "Invalid industry" }
     ),
     country: z.string().nonempty("Country is required"),
-    mobileNumber: z.string().nonempty("Mobile number is required"),
+    phoneNumber: z.string().nonempty("Mobile number is required"),
   });
 
   type FormData = z.infer<typeof formSchema>;
@@ -81,10 +90,47 @@ export default function Register() {
             <InputField
               register={register}
               label="Company Name"
-              type="email"
+              type="text"
               name="companyName"
-            //   placeholder="Enter your email"
+              //   placeholder="Enter your email"
               errorMessage={errors.companyName?.message}
+            />
+          </div>
+          <div className="col-span-2">
+            <SelectField
+              register={register}
+              label="Industry"
+              name="industry"
+              placeholder="Select Industry"
+              options={IndustryData.map((industry) => ({
+                value: industry.slug,
+                label: industry.title,
+              }))}
+              errorMessage={errors.industry?.message}
+            />
+          </div>
+          <div className="col-span-2">
+            <SelectField
+              register={register}
+              label="Country"
+              name="country"
+              placeholder="Select Country"
+              options={countries.map((country) => ({
+                value: country.id,
+                label: country.name,
+              }))}
+              errorMessage={errors.country?.message}
+            />
+          </div>
+          <div className="col-span-2">
+            <PhoneNumberInput
+              label="Mobile Number"
+              register={register}
+              name="phoneNumber"
+              selectedCountry={selectedCountryCode}
+              setSelectedCountry={setSelectedCountryCode}
+              countries={countryCodes}
+              error={errors.phoneNumber?.message}
             />
           </div>
         </div>

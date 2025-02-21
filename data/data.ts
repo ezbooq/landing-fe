@@ -2,7 +2,7 @@ export const Industries = [
   {
     id: "1",
     title: "Car Detailing & Car Wash",
-    slug: "car-detailing-&-car-wash",
+    slug: "car-detailing-car-wash",
     image: ["/cardetailing.jpg", "/carwash.jpg"],
     description:
       "Car detailing is the act of performing a thorough cleaning, restoration, and finishing of a motor vehicle, to produce a show-quality cleanliness and polish.",
@@ -62,7 +62,7 @@ export const Industries = [
   {
     id: "3",
     title: "Pet Grooming & Dog Walkers",
-    slug: "pet-grooming-&-dog-walkers",
+    slug: "pet-grooming-dog-walkers",
     image: ["/petgrooming.jpg"],
     description:
       "Pet grooming refers to both the hygienic care and cleaning of a dog, as well as a process by which a dog's physical appearance is enhanced for showing or other types of competition.",
@@ -92,7 +92,7 @@ export const Industries = [
   {
     id: "4",
     title: "Lawn Care & Landscaping",
-    slug: "lawn-care-&-landscaping",
+    slug: "lawn-care-landscaping",
     image: ["/Carpet cleaning.jpg"],
     description:
       "Carpet cleaning is done to remove dirt, stains, and allergens from carpets.",
@@ -151,7 +151,7 @@ export const Industries = [
   {
     id: "6",
     title: "Nail Salon & Spa",
-    slug: "nail-salon-&-spa",
+    slug: "nail-salon-spa",
     image: ["/petwalking.jpeg"],
     description: "A pet walker is a professional who takes dogs for walks.",
     features: [
@@ -207,7 +207,7 @@ export const Industries = [
   {
     id: "8",
     title: "Tutors & Coaches",
-    slug: "tutors-&-coaches",
+    slug: "tutors-coaches",
     image: ["/Carpet cleaning.jpg"],
     description: "Lawn care is the process of maintaining a lawn.",
     features: [
@@ -235,7 +235,7 @@ export const Industries = [
   {
     id: "9",
     title: "Lawyers & Accountants",
-    slug: "lawyers-&-accountants",
+    slug: "lawyers-accountants",
     image: ["/Carpet cleaning.jpg"],
     description:
       "A moving business is a company that helps people move from one location to another.",
@@ -265,7 +265,7 @@ export const Industries = [
   {
     id: "10",
     title: "Carpet & Glutter Cleaning",
-    slug: "carpet-&-glutter-cleaning",
+    slug: "carpet-glutter-cleaning",
     image: ["/Carpet cleaning.jpg"],
     description:
       "A moving business is a company that helps people move from one location to another.",

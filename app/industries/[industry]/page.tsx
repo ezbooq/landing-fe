@@ -1,19 +1,25 @@
+"use client";
+
+import { useParams } from "next/navigation";
 import Button from "@/components/button/Button";
 import ImageSlider from "@/components/imageSlider/imageSlider";
 import Hero2 from "@/components/section/home/hero/5stars";
 import { Industries as IndustryData } from "@/data/data";
 import { FaRegStar } from "react-icons/fa";
+import { useRouter } from "next/navigation";
+import PopUpModal from "@/components/popUpModal/PopUpModal";
+import { useState } from "react";
 
-type IndustryPageProps = {
-  params: {
-    industry: string;
-  };
-};
-
-const IndustryPage = async ({ params }: IndustryPageProps) => {
-  const { industry } = await params;
-
+const IndustryPage = () => {
+  const { industry } = useParams(); // Get dynamic route params
   const Industry = IndustryData.find((item) => item.slug === industry);
+
+  const router = useRouter();
+  const [showModal, setShowModal] = useState(false);
+  
+    const handleOpenModal = () => {
+      setShowModal(true);
+    };
 
   if (!Industry) {
     return <h1>Industry not found</h1>;
@@ -24,7 +30,7 @@ const IndustryPage = async ({ params }: IndustryPageProps) => {
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-4 p-4 mt-8">
         <div className="flex flex-col gap-4 text-black">
           <h1 className="text-2xl sm:text-4xl">
-            Business Plantform works with {Industry.title}
+            Business Platform works with {Industry.title}
           </h1>
           <p className="text-sm sm:text-base text-black">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
@@ -33,8 +39,15 @@ const IndustryPage = async ({ params }: IndustryPageProps) => {
             perferendis praesentium quos saepe quod.
           </p>
           <div className="flex gap-4">
-            <Button variant="solid">Book a demo</Button>
-            <Button variant="outline">SignUp</Button>
+            <Button
+              onClick={() => {
+                router.push("/register");
+              }}
+              className="hidden md:inline"
+            >
+              Sign Up
+            </Button>
+            <Button variant="outline" onClick={() => handleOpenModal()}>Learn More</Button>
           </div>
         </div>
         <div className="z-10">
@@ -44,7 +57,7 @@ const IndustryPage = async ({ params }: IndustryPageProps) => {
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-4 p-4 mt-8">
         <div className="flex flex-col gap-4 text-black">
           <h1 className="text-2xl sm:text-4xl">
-            Business Plantform works with {Industry.title}
+            Business Platform works with {Industry.title}
           </h1>
           <p className="text-sm sm:text-base text-black mb-8">
             {Industry.description}
@@ -63,6 +76,19 @@ const IndustryPage = async ({ params }: IndustryPageProps) => {
         </div>
       </div>
       <Hero2 />
+      <PopUpModal
+        open={showModal}
+        onClose={() => {
+          setShowModal(false);
+        }}
+      >
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/aL27fX5kv9U"
+          title="Introduction To WiseGPT"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe>
+      </PopUpModal>
     </div>
   );
 };
