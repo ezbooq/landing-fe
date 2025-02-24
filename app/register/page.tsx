@@ -54,7 +54,7 @@ export default function Register() {
   };
 
   return (
-    <div className="grid grid-cols-6 items-center max-w-7xl mx-auto px-4 py-8 gap-10">
+    <main className="grid grid-cols-6 items-center max-w-7xl mx-auto px-4 py-8 gap-10">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="space-y-4 w-full col-span-6 lg:col-span-3 "
@@ -148,6 +148,6 @@ export default function Register() {
           width={800}
         />
       </div>
-    </div>
+    </main>
   );
 }

@@ -1,6 +1,6 @@
 const Stats: React.FC = () => {
   return (
-    <div className="mb-8 mt-8 sm:mt-2 bg-[#F9F9F9]">
+    <section className="mb-8 mt-8 sm:mt-2 bg-[#F9F9F9]">
       <div className="max-w-7xl mx-auto px-4 py-8 text-black">
         <div className="flex justify-between items-center gap-4 text-center">
           <div className="flex flex-col items-center md:items-start">
@@ -31,7 +31,7 @@ const Stats: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

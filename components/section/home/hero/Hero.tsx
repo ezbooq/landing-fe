@@ -5,7 +5,7 @@ import Button from "@/components/button/Button";
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative max-w-full">
+    <section className="relative max-w-full">
       {/* Left Background */}
       <div
         className="hidden lg:inline absolute inset-y-0 left-0 w-80 h-full bg-cover bg-no-repeat bg-left"
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
       </div>
       {/* Overlay to ensure content visibility */}
       <div className="absolute inset-0 z-0 bg-transparent"></div>
-    </div>
+    </section>
   );
 };
 

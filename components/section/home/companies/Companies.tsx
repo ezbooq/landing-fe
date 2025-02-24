@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Companies: React.FC = () => {
   return (
-    <div className="mt-8 sm:mt-2 overflow-hidden bg-white">
+    <section className="mt-8 sm:mt-2 overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto sm:p-10 px-5 py-5">
         <h3 className="text-center text-xl font-semibold">We are trusted by</h3>
         <div className="relative w-full overflow-hidden mt-8">
@@ -26,7 +26,7 @@ const Companies: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

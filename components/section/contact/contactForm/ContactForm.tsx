@@ -43,7 +43,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <section>
       <div className="relative">
         <div
           className="hidden lg:inline absolute inset-y-0 right-0 w-96 h-full bg-cover bg-no-repeat bg-right rotate-180"
@@ -157,7 +157,7 @@ const ContactForm = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

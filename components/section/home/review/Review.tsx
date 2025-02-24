@@ -40,7 +40,7 @@ const Review: React.FC = () => {
   };
 
   return (
-    <div className="text-center mb-8 mt-8 sm:mt-2 bg-secondary">
+    <section className="text-center mb-8 mt-8 sm:mt-2 bg-secondary">
       <div className="max-w-5xl mx-auto sm:p-10 px-5 py-5">
         <h1 className="text-2xl sm:text-4xl font-medium mb-4">
           What Our Customers Has to Say
@@ -101,7 +101,7 @@ const Review: React.FC = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

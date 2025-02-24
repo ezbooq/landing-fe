@@ -3,7 +3,7 @@ import { Industries as IndustryData } from "@/data/data";
 
 export default function Industries() {
   return (
-    <div className="flex flex-col max-w-7xl mx-auto text-center mt-8 gap-7 p-4">
+    <main className="flex flex-col max-w-7xl mx-auto text-center mt-8 gap-7 p-4">
       <h1 className="text-2xl sm:text-4xl text-black max-w-xl mx-auto">
         Discover how Ezbooq Best Serves Your Industry
       </h1>
@@ -22,6 +22,6 @@ export default function Industries() {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 }

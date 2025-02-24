@@ -91,7 +91,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-5 py-10 md:px-5 xl:px-0">
+    <section className="max-w-7xl mx-auto px-5 py-10 md:px-5 xl:px-0">
       <div className="text-center">
         <p className="text-lg sm:text-xl text-primary mb-5">
           Better benefits for your business
@@ -128,7 +128,7 @@ const Features: React.FC = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

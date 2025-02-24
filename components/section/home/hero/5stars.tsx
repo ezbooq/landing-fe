@@ -3,7 +3,7 @@ import { IoMdStar } from "react-icons/io";
 
 const Hero2: React.FC = () => {
   return (
-    <div className="text-center mb-8 mt-8 sm:mt-2 bg-[#F9F9F9]">
+    <section className="text-center mb-8 mt-8 sm:mt-2 bg-[#F9F9F9]">
       <div className="max-w-6xl mx-auto sm:p-10 px-5 py-5 text-primary">
         <h1 className="text-2xl sm:text-3xl font-medium mb-4">
           Trusted by Hundreds of Large & Small Businesses Around The world
@@ -21,7 +21,7 @@ const Hero2: React.FC = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

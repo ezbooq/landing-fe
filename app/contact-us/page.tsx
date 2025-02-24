@@ -3,9 +3,9 @@ import FAQ from "@/components/section/contact/FAQ/FAQ";
 
 export default function ContactUs() {
   return (
-    <div>
+    <main>
       <ContactForm />
       <FAQ />
-    </div>
+    </main>
   );
 }

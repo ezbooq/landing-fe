@@ -2,7 +2,7 @@ import WorldMap from "@/components/ui/world-map";
 
 export function Map() {
   return (
-    <div className="py-10 bg-white w-full">
+    <section className="py-10 bg-white w-full">
       <WorldMap
         dots={[
           {
@@ -37,6 +37,6 @@ export function Map() {
           },
         ]}
       />
-    </div>
+    </section>
   );
 }
