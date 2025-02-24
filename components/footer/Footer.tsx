@@ -41,10 +41,10 @@ const Footer: React.FC = () => {
   const date = new Date();
 
   return (
-    <footer className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 py-8">
+    <footer className="bg-white p-5 py-10">
+      <div className="max-w-7xl mx-auto">
         <Newsletter />
-        <div className="flex justify-between gap-6 border-t border-gray-300 pt-6">
+        <div className="flex flex-col sm:flex-row justify-between gap-6 border-t border-gray-300 pt-6">
           <div className="">
             <Image src="/logo.svg" alt="Logo" width={120} height={50} />
             <h4 className="font-bold mt-3">Address</h4>
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
               ))}
             </div>
           </div>
-          <div className="flex gap-4 sm:gap-10">
+          <div className="flex justify-between gap-4 sm:gap-10">
             {columns.map((column) => (
               <FooterColumn
                 key={column.title}

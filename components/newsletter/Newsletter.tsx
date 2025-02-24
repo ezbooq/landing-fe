@@ -45,7 +45,7 @@ const Newsletter: React.FC = () => {
       </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex items-center gap-3"
+        className="flex flex-col sm:flex-row items-center gap-3"
       >
         <InputField
           register={register}
