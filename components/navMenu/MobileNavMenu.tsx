@@ -35,9 +35,9 @@ const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
         <NavLink href="/" onClick={() => setIsMobileNavOpen(false)}>
           Home
         </NavLink>
-        <NavLink href="/why-us" onMouseEnter={() => setIsMobileNavOpen(false)}>
+        {/* <NavLink href="/why-us" onMouseEnter={() => setIsMobileNavOpen(false)}>
           Why Us
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
           href="/industries"

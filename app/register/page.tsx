@@ -1,7 +1,6 @@
 "use client";
 
 import { z } from "zod";
-import { Industries as IndustryData } from "@/data/data";
 import { useToast } from "@/hooks/useToast";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -15,20 +14,42 @@ import { Country } from "@/types/common";
 import dynamic from "next/dynamic";
 const SelectField = dynamic(() => import("@/components/selectField/SelectField"), { ssr: false });
 
+const IndustryList = [
+  { id: "CAR_DETAILING", name: "Car Detailing" },
+  { id: "CAR_WASH", name: "Car Wash" },
+  { id: "HOME_CLEANING", name: "Home Cleaning" },
+  { id: "PET_GROOMERS", name: "Pet Groomers" },
+  { id: "DOG_WALKER", name: "Dog Walker" },
+  { id: "CARPET_CLEANING", name: "Carpet Cleaning" },
+  { id: "POOL_CLEANING", name: "Pool Cleaning" },
+  { id: "LAWN_CARE", name: "Lawn Care" },
+  { id: "MOVING_BUSINESS", name: "Moving Business" },
+  { id: "NAIL_SALOON", name: "Nail Saloon" },
+  { id: "SPA", name: "Spa" },
+  { id: "MASSAGE", name: "Massage" },
+  { id: "GUTTER_CLEANING", name: "Gutter Cleaning" },
+  { id: "LAWYERS", name: "Lawyers" },
+  { id: "ACCOUNTANTS", name: "Accountants" },
+  { id: "ALL_TUTORS", name: "All Tutors" },
+  { id: "ALL_CONSULTATION", name: "All Consultation" },
+  { id: "ALL_COACHES", name: "All Coaches (online coach, personal trainers, nutrition coaches, etc...)" },
+  { id: "OTHERS", name: "Others" }
+];
+
 export default function Register() {
   const [selectedCountryCode, setSelectedCountryCode] = useState<Country>(
     countryCodes[126]
   );
   const formSchema = z.object({
     firstname: z.string().nonempty("First name is required"),
-    lastname: z.string().nonempty("Last name is required"),
+    lastname: z.string(),
     email: z
       .string()
       .nonempty("Email is required")
       .email("Invalid email address"),
     companyName: z.string().nonempty("Company name is required"),
     industry: z.enum(
-      IndustryData.map((industry) => industry.slug) as [string, ...string[]],
+      IndustryList.map((industry) => industry.id) as [string, ...string[]],
       { message: "Invalid industry" }
     ),
     country: z.string().nonempty("Country is required"),
@@ -102,9 +123,9 @@ export default function Register() {
               label="Industry"
               name="industry"
               placeholder="Select Industry"
-              options={IndustryData.map((industry) => ({
-                value: industry.slug,
-                label: industry.title,
+              options={IndustryList.map((industry) => ({
+                value: industry.id,
+                label: industry.name,
               }))}
               errorMessage={errors.industry?.message}
             />

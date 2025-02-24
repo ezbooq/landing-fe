@@ -15,9 +15,9 @@ const NavMenu: React.FC<NavMenuProps> = ({
       className="items-center space-x-8 hidden md:flex mx-2"
       onClick={() => setIsDropdownOpen(false)}
     >
-      <NavLink href="/why-us" onMouseEnter={() => setIsDropdownOpen(false)}>
+      {/* <NavLink href="/why-us" onMouseEnter={() => setIsDropdownOpen(false)}>
         Why Us
-      </NavLink>
+      </NavLink> */}
 
       <NavLink href="/industries" onMouseEnter={() => setIsDropdownOpen(true)}>
         <div className="flex items-center">
