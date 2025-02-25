@@ -21,7 +21,7 @@ const Header: React.FC = () => {
     <header className="sticky w-full items-center bg-secondary shadow-md top-0 z-50">
       <Banner />
       <div className="flex justify-between items-center p-5 max-w-7xl mx-auto">
-        <NavLink href="/">
+        <NavLink href="/" onClick={() => setIsDropdownOpen(false)}>
           <Image src="/logo.svg" alt="Logo" width={120} height={50} />
         </NavLink>
 
@@ -32,6 +32,7 @@ const Header: React.FC = () => {
 
         <Button
           onClick={() => {
+            setIsDropdownOpen(false);
             router.push("/register");
           }}
           className="hidden md:inline"

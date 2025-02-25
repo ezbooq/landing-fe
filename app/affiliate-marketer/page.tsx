@@ -1,6 +1,7 @@
 "use client";
 
 import Button from "@/components/button/Button";
+import { useRouter } from "next/navigation";
 import { CiStar } from "react-icons/ci";
 
 const features = [
@@ -13,6 +14,9 @@ const features = [
 ];
 
 export default function AffiliateMarketer() {
+
+  const router = useRouter();
+
   return (
     <main>
       <div className="bg-secondary py-10 p-5">
@@ -26,7 +30,7 @@ export default function AffiliateMarketer() {
               service providers. Join us in revolutionizing the industry
             </p>
             <div className="flex justify-center">
-              <Button variant="solid" onClick={() => {}}>
+              <Button variant="solid" onClick={() => {router.push('/affiliate-marketer/partner-sign-up')}}>
                 Apply now
               </Button>
             </div>

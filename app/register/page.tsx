@@ -12,7 +12,11 @@ import { countries, countryCodes } from "@/utils/country";
 import { useState } from "react";
 import { Country } from "@/types/common";
 import dynamic from "next/dynamic";
-const SelectField = dynamic(() => import("@/components/selectField/SelectField"), { ssr: false });
+import parsePhoneNumberFromString from "libphonenumber-js";
+const SelectField = dynamic(
+  () => import("@/components/selectField/SelectField"),
+  { ssr: false }
+);
 
 const IndustryList = [
   { id: "CAR_DETAILING", name: "Car Detailing" },
@@ -32,8 +36,11 @@ const IndustryList = [
   { id: "ACCOUNTANTS", name: "Accountants" },
   { id: "ALL_TUTORS", name: "All Tutors" },
   { id: "ALL_CONSULTATION", name: "All Consultation" },
-  { id: "ALL_COACHES", name: "All Coaches (online coach, personal trainers, nutrition coaches, etc...)" },
-  { id: "OTHERS", name: "Others" }
+  {
+    id: "ALL_COACHES",
+    name: "All Coaches (online coach, personal trainers, nutrition coaches, etc...)",
+  },
+  { id: "OTHERS", name: "Others" },
 ];
 
 export default function Register() {
@@ -53,7 +60,17 @@ export default function Register() {
       { message: "Invalid industry" }
     ),
     country: z.string().nonempty("Country is required"),
-    phoneNumber: z.string().nonempty("Mobile number is required"),
+    phoneNumber: z
+      .string()
+      .nonempty("Mobile number is required")
+      .refine(
+        (value) => {
+          const fullPhoneNumber = `${selectedCountryCode.dialingCode}${value}`;
+          const parsedPhoneNumber = parsePhoneNumberFromString(fullPhoneNumber);
+          return parsedPhoneNumber?.isValid() ?? false;
+        },
+        { message: "Invalid phone number" }
+      ),
   });
 
   type FormData = z.infer<typeof formSchema>;
@@ -69,7 +86,14 @@ export default function Register() {
   });
 
   const onSubmit = (data: FormData) => {
-    localStorage.setItem("formData", JSON.stringify(data));
+    const fullPhoneNumber = `${selectedCountryCode.dialingCode}${data.phoneNumber}`;
+
+    const formDataWithFullNumber = {
+      ...data,
+      mobileNumber: fullPhoneNumber, // Ensure the phone number includes the country code
+    };
+
+    localStorage.setItem("formData", JSON.stringify(formDataWithFullNumber));
     showToast("Form submitted successfully!", "success");
     reset();
   };
