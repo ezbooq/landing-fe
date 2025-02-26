@@ -30,11 +30,11 @@ const NavMenu: React.FC<NavMenuProps> = ({
         </div>
       </NavLink>
 
-      {/* <NavLink href="/contact-us" onMouseEnter={() => setIsDropdownOpen(false)}>
+      <NavLink href="/contact-us" onMouseEnter={() => setIsDropdownOpen(false)}>
         Contact Us
-      </NavLink> */}
+      </NavLink>
       <NavLink href="/affiliate-marketer">Join Affiliate Marketer</NavLink>
-      <NavLink href="/news">What&apos;s New</NavLink>
+      {/* <NavLink href="/news">What&apos;s New</NavLink> */}
     </nav>
   );
 };

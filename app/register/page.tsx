@@ -94,7 +94,7 @@ export default function Register() {
     };
 
     localStorage.setItem("formData", JSON.stringify(formDataWithFullNumber));
-    showToast("Form submitted successfully!", "success");
+    showToast("Thank you for signing up with Ezbooq! 🎉 We're excited to have you on board. Stay tuned for updates on how Ezbooq can help your business grow.", "success");
     reset();
   };
 
@@ -132,6 +132,17 @@ export default function Register() {
             />
           </div>
           <div className="col-span-2">
+            <PhoneNumberInput
+              label="Mobile Number"
+              register={register}
+              name="phoneNumber"
+              selectedCountry={selectedCountryCode}
+              setSelectedCountry={setSelectedCountryCode}
+              countries={countryCodes}
+              error={errors.phoneNumber?.message}
+            />
+          </div>
+          <div className="col-span-2">
             <InputField
               register={register}
               label="Company Name"
@@ -165,17 +176,6 @@ export default function Register() {
                 label: country.name,
               }))}
               errorMessage={errors.country?.message}
-            />
-          </div>
-          <div className="col-span-2">
-            <PhoneNumberInput
-              label="Mobile Number"
-              register={register}
-              name="phoneNumber"
-              selectedCountry={selectedCountryCode}
-              setSelectedCountry={setSelectedCountryCode}
-              countries={countryCodes}
-              error={errors.phoneNumber?.message}
             />
           </div>
         </div>

@@ -24,7 +24,7 @@ export const ToastProvider: React.FC<{ children: ReactNode }> = ({
   const showToast = (
     message: string,
     type: ToastType = "info",
-    duration: number = 3000
+    duration: number = 7000
   ) => {
     setToast({ message, type, duration });
   };
