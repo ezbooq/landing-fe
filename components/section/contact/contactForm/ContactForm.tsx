@@ -38,7 +38,7 @@ const ContactForm = () => {
 
   const onSubmit = (data: FormData) => {
     localStorage.setItem("formData", JSON.stringify(data));
-    showToast("Form submitted successfully!", "success");
+    showToast("Thank you for reaching out! 📩 We’ve received your inquiry, and a member of our Ezbooq team will contact you soon.", "success");
     reset();
   };
 

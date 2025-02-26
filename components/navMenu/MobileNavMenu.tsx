@@ -75,19 +75,19 @@ const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
             </NavLink>
           </div>
         )}
-        <NavLink href="/contact-us" onClick={() => setIsMobileNavOpen(false)}>
-          Contact Us
-        </NavLink>
-
         <NavLink
           href="/affiliate-marketer"
           onClick={() => setIsMobileNavOpen(false)}
         >
           Join Affiliate Marketer
         </NavLink>
-        <NavLink href="/news" onClick={() => setIsMobileNavOpen(false)}>
-          What&apos;s New
+        <NavLink href="/contact-us" onClick={() => setIsMobileNavOpen(false)}>
+          Contact Us
         </NavLink>
+
+        {/* <NavLink href="/news" onClick={() => setIsMobileNavOpen(false)}>
+          What&apos;s New
+        </NavLink> */}
 
         <Button
           variant="solid"

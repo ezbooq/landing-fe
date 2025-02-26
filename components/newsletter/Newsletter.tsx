@@ -28,7 +28,7 @@ const Newsletter: React.FC = () => {
 
   const onSubmit = (data: FormData) => {
     localStorage.setItem("newsletterEmail", JSON.stringify(data));
-    showToast("Email submitted successfully!", "success");
+    showToast("Thank you for subscribing to the Ezbooq newsletter! 💡 Expect valuable insights, industry tips, and the latest updates to help your business thrive.", "success");
     reset();
   };
 

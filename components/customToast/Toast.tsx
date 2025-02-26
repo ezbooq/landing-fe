@@ -24,10 +24,10 @@ const Toast: React.FC<ToastProps> = ({
 
   
   const toastColors = {
-    success: "bg-primary",
-    error: "bg-red-500",
-    info: "bg-blue-500",
-    warning: "bg-yellow-500",
+    success: "border-l-primary",
+    error: "border-l-red-500",
+    info: "border-l-blue-500",
+    warning: "border-l-yellow-500",
   };
 
   return (
@@ -37,7 +37,7 @@ const Toast: React.FC<ToastProps> = ({
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.3 }}
-        className={`fixed bottom-4 right-4 z-50 px-4 py-4 rounded-lg shadow-lg text-white ${
+        className={`bg-secondary fixed bottom-4 right-4 ml-4 z-50 px-4 py-4 rounded-lg shadow-lg text-black border border-l-4 ${
           toastColors[type]
         }`}
       >
@@ -45,7 +45,7 @@ const Toast: React.FC<ToastProps> = ({
           <span>{message}</span>
           <button
             onClick={onClose}
-            className="ml-4 text-white font-bold hover:opacity-80"
+            className="ml-4 text-black font-bold hover:opacity-80"
           >
             &times;
           </button>
