@@ -30,12 +30,12 @@ const Footer: React.FC = () => {
   ];
 
   const socialIcons = [
-    { icon: <FaFacebook size={19} />, href: "#" },
-    { icon: <FaInstagram size={19} />, href: "#" },
-    { icon: <FaTiktok size={19} />, href: "#" },
-    { icon: <FaYoutube size={19} />, href: "#" },
-    { icon: <FaLinkedin size={19} />, href: "#" },
-    { icon: <FaXTwitter size={19} />, href: "#" },
+    { icon: <FaFacebook size={21} />, href: "#" },
+    { icon: <FaInstagram size={21} />, href: "#" },
+    { icon: <FaTiktok size={21} />, href: "#" },
+    { icon: <FaYoutube size={21} />, href: "#" },
+    { icon: <FaLinkedin size={21} />, href: "#" },
+    { icon: <FaXTwitter size={21} />, href: "#" },
   ];
 
   const date = new Date();
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
                 <NavLink
                   key={index}
                   href={social.href}
-                  className="text-gray-500"
+                  className="text-gray-500 hover:text-black"
                 >
                   {social.icon}
                 </NavLink>
