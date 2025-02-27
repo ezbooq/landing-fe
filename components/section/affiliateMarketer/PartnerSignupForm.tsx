@@ -91,7 +91,7 @@ export default function PartnerSignupForm() {
         <div className="space-y-4">
           <InputField
             register={register}
-            label="First Name"
+            label="First Name*"
             name="firstName"
             errorMessage={errors.firstName?.message}
           />
@@ -102,7 +102,7 @@ export default function PartnerSignupForm() {
             errorMessage={errors.lastName?.message}
           />
           <PhoneNumberInput
-            label="Mobile Number"
+            label="Mobile Number*"
             register={register}
             name="mobileNumber"
             selectedCountry={selectedCountryCode}
@@ -112,14 +112,14 @@ export default function PartnerSignupForm() {
           />
           <InputField
             register={register}
-            label="Email"
+            label="Email*"
             type="email"
             name="email"
             errorMessage={errors.email?.message}
           />
           <SelectField
             register={register}
-            label="Country"
+            label="Country*"
             name="country"
             placeholder="Select Country"
             options={countries.map((country) => ({

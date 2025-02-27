@@ -7,26 +7,27 @@ const Hero: React.FC = () => {
   return (
     <section className="relative max-w-full">
       {/* Left Background */}
-      <div
+      {/* <div
         className="hidden lg:inline absolute inset-y-0 left-0 w-80 h-full bg-cover bg-no-repeat bg-left"
         style={{
           backgroundImage: "url('/backgroundCircleLeft.png')",
         }}
-      ></div>
+      ></div> */}
 
       {/* Right Background */}
-      <div
+      {/* <div
         className="hidden lg:inline absolute inset-y-0 right-0 w-80 h-full bg-cover bg-no-repeat bg-right rotate-180 translate-y-2"
         style={{
           backgroundImage: "url('/backgroundCircleLeft.png')",
         }}
-      ></div>
-      <div className="relative text-center mb-8 mt-8 sm:mt-4 max-w-4xl mx-auto sm:p-10 px-5">
+      ></div> */}
+      <div className="relative text-center mb-8 mt-8 sm:mt-4 max-w-7xl mx-auto sm:pt-10 px-5 bg-secondary rounded-t-lg shadow-md">
         {/* Content */}
         <h1 className="relative text-2xl sm:text-4xl font-medium mb-4 z-10">
-          Empower Your Business with <span className="text-primary">Ezbooq</span>
+          Empower Your Business with{" "}
+          <span className="text-primary">Ezbooq</span>
         </h1>
-        <p className="relative text-black text-sm sm:text-base mb-6 z-10">
+        <p className="relative text-black text-sm sm:text-base max-w-4xl mx-auto mb-6 z-10">
           Ezbooq is in development to revolutionize booking, customer
           management, staff management, and more for service providers across
           industries. Be part of the journey!
@@ -39,18 +40,20 @@ const Hero: React.FC = () => {
             Learn more
           </Button>
         </div>
-        <div className="relative mt-8 flex items-center justify-center z-10">
+
+        {/* Image section with NO bottom rounded corners or shadow */}
+        <div className="relative mt-8 flex items-start justify-center overflow-hidden max-w-4xl mx-auto h-[450px] shadow-none rounded-none">
           <Image
             src="/Dashboard.svg"
             alt="dashboard"
-            className="w-full rounded-lg shadow-lg"
+            className="w-full rounded-none shadow-none"
             height={400}
             width={1000}
           />
         </div>
       </div>
       {/* Overlay to ensure content visibility */}
-      <div className="absolute inset-0 z-0 bg-transparent"></div>
+      {/* <div className="absolute inset-0 z-0 bg-transparent"></div> */}
     </section>
   );
 };
