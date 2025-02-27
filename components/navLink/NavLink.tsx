@@ -16,10 +16,13 @@ const NavLink: React.FC<NavLinkProps> = ({
   children,
   className = "",
   onMouseEnter,
-  onClick
+  onClick,
 }) => {
   const pathName = usePathname();
   const isActive = pathName === href;
+
+  const isExternal = href.startsWith("http") || href.startsWith("//"); 
+
   return (
     <Link
       href={href}
@@ -28,6 +31,9 @@ const NavLink: React.FC<NavLinkProps> = ({
       className={`${
         isActive ? "text-primary" : "text-black"
       } text-sm font-medium hover:text-green-700 ${className}`}
+      {...(isExternal
+        ? { target: "_blank", rel: "noopener noreferrer" }
+        : {})}
     >
       {children}
     </Link>

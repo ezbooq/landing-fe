@@ -1,4 +1,11 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import FooterColumn from "./FooterColumn";
 import Image from "next/image";
@@ -30,12 +37,28 @@ const Footer: React.FC = () => {
   ];
 
   const socialIcons = [
-    { icon: <FaFacebook size={21} />, href: "#" },
-    { icon: <FaInstagram size={21} />, href: "#" },
-    { icon: <FaTiktok size={21} />, href: "#" },
-    { icon: <FaYoutube size={21} />, href: "#" },
-    { icon: <FaLinkedin size={21} />, href: "#" },
-    { icon: <FaXTwitter size={21} />, href: "#" },
+    {
+      icon: <FaFacebook size={21} />,
+      href: "https://www.facebook.com/ezbooqofficial",
+    },
+    {
+      icon: <FaInstagram size={21} />,
+      href: "https://www.instagram.com/ezbooq_official/",
+    },
+    {
+      icon: <FaTiktok size={21} />,
+      href: "https://www.tiktok.com/@ezbooq.official",
+    },
+    { icon: <FaYoutube size={21} />, href: "https://www.youtube.com/@Ezbooq" },
+    {
+      icon: <FaLinkedin size={21} />,
+      href: "https://www.linkedin.com/company/ezbooq/?viewAsMember=true",
+    },
+    { icon: <FaXTwitter size={21} />, href: "https://x.com/Ezbooq_official" },
+    {
+      icon: <FaPinterest size={21} />,
+      href: "https://www.pinterest.com/ezbooqofficial/",
+    },
   ];
 
   const date = new Date();
