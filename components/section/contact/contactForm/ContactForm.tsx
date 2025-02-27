@@ -60,14 +60,14 @@ const ContactForm = () => {
             <p>Fill out the form below to contact us</p>
             <InputField
               register={register}
-              label="Name"
+              label="Name*"
               name="name"
               placeholder="Enter your name"
               errorMessage={errors.name?.message}
             />
             <InputField
               register={register}
-              label="Email"
+              label="Email*"
               type="email"
               name="email"
               placeholder="Enter your email"
@@ -75,7 +75,7 @@ const ContactForm = () => {
             />
             <InputField
               register={register}
-              label="Message"
+              label="Message*"
               name="message"
               type="textarea"
               // value={FormData.message}

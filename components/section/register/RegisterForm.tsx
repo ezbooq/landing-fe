@@ -111,7 +111,7 @@ export default function RegisterForm() {
       <div className="grid grid-cols-2 gap-4">
         <InputField
           register={register}
-          label="First Name"
+          label="First Name*"
           name="firstname"
           errorMessage={errors.firstname?.message}
         />
@@ -124,7 +124,7 @@ export default function RegisterForm() {
         <div className="col-span-2">
           <InputField
             register={register}
-            label="Email"
+            label="Email*"
             type="email"
             name="email"
             errorMessage={errors.email?.message}
@@ -133,7 +133,7 @@ export default function RegisterForm() {
         <div className="col-span-2">
           <InputField
             register={register}
-            label="Company Name"
+            label="Company Name*"
             type="text"
             name="companyName"
             errorMessage={errors.companyName?.message}
@@ -142,7 +142,7 @@ export default function RegisterForm() {
         <div className="col-span-2">
           <SelectField
             register={register}
-            label="Industry"
+            label="Industry*"
             name="industry"
             placeholder="Select Industry"
             options={IndustryList.map((industry) => ({
@@ -155,7 +155,7 @@ export default function RegisterForm() {
         <div className="col-span-2">
           <SelectField
             register={register}
-            label="Country"
+            label="Country*"
             name="country"
             placeholder="Select Country"
             options={countries.map((country) => ({
@@ -167,7 +167,7 @@ export default function RegisterForm() {
         </div>
         <div className="col-span-2">
           <PhoneNumberInput
-            label="Mobile Number"
+            label="Mobile Number*"
             register={register}
             name="phoneNumber"
             selectedCountry={selectedCountryCode}
