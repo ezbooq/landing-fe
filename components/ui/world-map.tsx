@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import DottedMap from "dotted-map";
 
-// Lazy load the component
 const WorldMap = dynamic(() => Promise.resolve(WorldMapComponent), {
   ssr: false,
 });
@@ -16,26 +15,30 @@ interface MapProps {
     end: { lat: number; lng: number; label?: string };
   }>;
   lineColor?: string;
+  useStaticImage?: boolean;
 }
 
-function WorldMapComponent({ dots = [], lineColor = "#22AD01" }: MapProps) {
+function WorldMapComponent({
+  dots = [],
+  lineColor = "#22AD01",
+  useStaticImage = false,
+}: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const svgMapRef = useRef<string | null>(null);
-
-  const [svgMap, setSvgMap] = useState<string | null>(() => svgMapRef.current);
+  const [svgMap, setSvgMap] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!svgMapRef.current) {
+    if (!svgMapRef.current && !useStaticImage) {
       const map = new DottedMap({ height: 100, grid: "diagonal" });
       svgMapRef.current = map.getSVG({
-        radius: 0.22,
-        color: "#00000040",
+        radius: 0.2,
+        color: "#00000030",
         shape: "circle",
         backgroundColor: "white",
       });
       setSvgMap(svgMapRef.current);
     }
-  }, []);
+  }, [useStaticImage]);
 
   const projectPoint = useMemo(
     () => (lat: number, lng: number) => {
@@ -64,12 +67,21 @@ function WorldMapComponent({ dots = [], lineColor = "#22AD01" }: MapProps) {
 
   return (
     <div className="w-full aspect-[2/1] bg-white rounded-lg relative font-sans">
-      {svgMap && (
-        <div
-          dangerouslySetInnerHTML={{ __html: svgMap }}
+      {useStaticImage ? (
+        <img
+          src="/static/world-map.png"
           className="h-full w-full absolute inset-0 pointer-events-none select-none"
+          alt="Dotted Map"
         />
+      ) : (
+        svgMap && (
+          <div
+            dangerouslySetInnerHTML={{ __html: svgMap }}
+            className="h-full w-full absolute inset-0 pointer-events-none select-none"
+          />
+        )
       )}
+
       <svg
         ref={svgRef}
         viewBox="0 0 800 400"
@@ -90,7 +102,7 @@ function WorldMapComponent({ dots = [], lineColor = "#22AD01" }: MapProps) {
             d={path.d}
             fill="none"
             stroke="url(#path-gradient)"
-            strokeWidth="1"
+            strokeWidth="1.5"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -101,17 +113,17 @@ function WorldMapComponent({ dots = [], lineColor = "#22AD01" }: MapProps) {
           <g key={`dots-${i}`}>
             {[path.start, path.end].map((point, index) => (
               <g key={`dot-${i}-${index}`}>
-                <circle cx={point.x} cy={point.y} r="2" fill={lineColor} />
+                <circle cx={point.x} cy={point.y} r="3" fill={lineColor} />
                 <circle
                   cx={point.x}
                   cy={point.y}
-                  r="2"
+                  r="3"
                   fill={lineColor}
                   opacity="0.5"
                 >
                   <animate
                     attributeName="r"
-                    from="2"
+                    from="3"
                     to="8"
                     dur="1.5s"
                     repeatCount="indefinite"
