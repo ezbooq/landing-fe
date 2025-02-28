@@ -41,7 +41,7 @@ const Newsletter: React.FC = () => {
         <h1 className="text-xl">Join Our Weekly Newsletter</h1>
         <p className="text-sm">
           Stay ahead with the latest updates, new features, and expert tips on
-          growing your business effortlessly. Get insights on how we’re making
+          growing your business effortlessly. <br/>Get insights on how we’re making
           business management smarter; straight to your inbox!
           {/* <br />
           we help to improve your business */}

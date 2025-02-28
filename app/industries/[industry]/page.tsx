@@ -30,13 +30,10 @@ const IndustryPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-4 p-4 mt-8">
         <div className="flex flex-col gap-4 text-black">
           <h1 className="text-2xl sm:text-4xl">
-            Business Platform works with {Industry.title}
+            {Industry.subTitle1}
           </h1>
           <p className="text-sm sm:text-base text-black">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-            quis necessitatibus pariatur accusamus nulla officiis maxime illo
-            velit, ratione, sunt enim, minima numquam. Commodi inventore
-            perferendis praesentium quos saepe quod.
+            {Industry.description1}
           </p>
           <div className="flex gap-4">
             <Button
@@ -57,10 +54,10 @@ const IndustryPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-4 p-4 mt-8">
         <div className="flex flex-col gap-4 text-black">
           <h1 className="text-2xl sm:text-4xl">
-            Business Platform works with {Industry.title}
+            {Industry.subTitle2}
           </h1>
           <p className="text-sm sm:text-base text-black mb-8">
-            {Industry.description}
+            {Industry.description2}
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4">

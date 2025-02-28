@@ -62,11 +62,11 @@ const Header: React.FC = () => {
           </h1>
           <div className="max-w-7xl mx-auto px-4 pt-4 grid grid-cols-3 gap-4">
             {IndustryData.map((industry) => (
-              <NavLink href={`/industries/${industry.slug}`} key={industry.id}>
+              <NavLink href={`/industries/${industry.slug}`} key={industry.id} onClick={() => setIsDropdownOpen(false)}>
                 {industry.title}
               </NavLink>
             ))}
-            <NavLink href={`/industries`} key={"all"} className="text-primary">
+            <NavLink href={`/industries`} key={"all"} className="text-primary" onClick={() => setIsDropdownOpen(false)}>
               View more...
             </NavLink>
           </div>

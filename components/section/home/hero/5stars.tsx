@@ -9,10 +9,8 @@ const Hero2: React.FC = () => {
           Trusted by Hundreds of Large & Small Businesses Around The world
         </h1>
         <p className="text-black text-sm sm:text-base mb-6">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius rem non
-          perferendis maiores molestiae sint voluptates? Expedita ullam, sint
-          incidunt voluptate architecto delectus laborum eligendi, accusamus
-          animi magnam, molestiae velit!
+          Watch, ask and learn how we help small, medium and large business with
+          easy, hassle free one stop solution to increase your business revenue
         </p>
         <div className="mt-8 flex items-center justify-center gap-2">
           <FcGoogle className="text-2xl" />
