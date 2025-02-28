@@ -42,9 +42,9 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Image section with NO bottom rounded corners or shadow */}
-        <div className="relative mt-8 flex items-start justify-center overflow-hidden max-w-4xl mx-auto h-[450px] shadow-none rounded-none">
+        <div className="relative mt-8 flex items-start justify-center overflow-hidden max-w-4xl mx-auto shadow-none rounded-none">
           <Image
-            src="/Dashboard.svg"
+            src="/Dashboard 1.svg"
             alt="dashboard"
             className="w-full rounded-none shadow-none"
             height={400}
