@@ -10,6 +10,7 @@ type InputFieldProps = {
   errorMessage?: string;
   className?: string;
   disabled?: boolean;
+  required?: boolean;
 };
 
 const InputField: React.FC<InputFieldProps> = ({
@@ -22,12 +23,13 @@ const InputField: React.FC<InputFieldProps> = ({
   errorMessage,
   className = "",
   disabled = false,
+  required = false,
 }) => {
   return (
     <div className={`flex flex-col w-full ${className}`}>
       {label && (
         <label htmlFor={name} className="mb-1 text-sm font-medium text-black">
-          {label}
+          {label}{required && <span className="text-red-500">*</span>}
         </label>
       )}
       {type === "textarea" ? (

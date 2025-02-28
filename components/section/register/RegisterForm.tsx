@@ -97,88 +97,99 @@ export default function RegisterForm() {
     };
 
     localStorage.setItem("formData", JSON.stringify(formDataWithFullNumber));
-    showToast("Thank you for signing up with Ezbooq! 🎉 We're excited to have you on board. Stay tuned for updates on how Ezbooq can help your business grow.", "success");
+    showToast(
+      "Thank you for signing up with Ezbooq! 🎉 We're excited to have you on board. Stay tuned for updates on how Ezbooq can help your business grow.",
+      "success"
+    );
     reset();
   };
 
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-4 w-full col-span-6 lg:col-span-3"
+      className="w-full col-span-6 lg:col-span-3"
     >
-      <h1 className="text-4xl">Register Now</h1>
-      <p>Fill out the form below to contact us</p>
-      <div className="grid grid-cols-2 gap-4">
-        <InputField
-          register={register}
-          label="First Name*"
-          name="firstname"
-          errorMessage={errors.firstname?.message}
-        />
-        <InputField
-          register={register}
-          label="Last Name"
-          name="lastname"
-          errorMessage={errors.lastname?.message}
-        />
-        <div className="col-span-2">
+      <div className="space-y-4">
+        <h1 className="text-4xl">Register Now</h1>
+        <p>Fill out the form below to contact us</p>
+        <div className="grid grid-cols-2 gap-4">
           <InputField
             register={register}
-            label="Email*"
-            type="email"
-            name="email"
-            errorMessage={errors.email?.message}
+            label="First Name"
+            name="firstname"
+            errorMessage={errors.firstname?.message}
+            required={true}
           />
-        </div>
-        <div className="col-span-2">
           <InputField
             register={register}
-            label="Company Name*"
-            type="text"
-            name="companyName"
-            errorMessage={errors.companyName?.message}
+            label="Last Name"
+            name="lastname"
+            errorMessage={errors.lastname?.message}
           />
-        </div>
-        <div className="col-span-2">
-          <SelectField
-            register={register}
-            label="Industry*"
-            name="industry"
-            placeholder="Select Industry"
-            options={IndustryList.map((industry) => ({
-              value: industry.id,
-              label: industry.name,
-            }))}
-            errorMessage={errors.industry?.message}
-          />
-        </div>
-        <div className="col-span-2">
-          <SelectField
-            register={register}
-            label="Country*"
-            name="country"
-            placeholder="Select Country"
-            options={countries.map((country) => ({
-              value: country.id,
-              label: country.name,
-            }))}
-            errorMessage={errors.country?.message}
-          />
-        </div>
-        <div className="col-span-2">
-          <PhoneNumberInput
-            label="Mobile Number*"
-            register={register}
-            name="phoneNumber"
-            selectedCountry={selectedCountryCode}
-            setSelectedCountry={setSelectedCountryCode}
-            countries={countryCodes}
-            error={errors.phoneNumber?.message}
-          />
+          <div className="col-span-2">
+            <InputField
+              register={register}
+              label="Email"
+              type="email"
+              name="email"
+              errorMessage={errors.email?.message}
+              required={true}
+            />
+          </div>
+          <div className="col-span-2">
+            <InputField
+              register={register}
+              label="Company Name"
+              type="text"
+              name="companyName"
+              errorMessage={errors.companyName?.message}
+              required={true}
+            />
+          </div>
+          <div className="col-span-2">
+            <SelectField
+              register={register}
+              label="Industry"
+              name="industry"
+              placeholder="Select Industry"
+              options={IndustryList.map((industry) => ({
+                value: industry.id,
+                label: industry.name,
+              }))}
+              errorMessage={errors.industry?.message}
+              required={true}
+            />
+          </div>
+          <div className="col-span-2">
+            <SelectField
+              register={register}
+              label="Country"
+              name="country"
+              placeholder="Select Country"
+              options={countries.map((country) => ({
+                value: country.id,
+                label: country.name,
+              }))}
+              errorMessage={errors.country?.message}
+              required={true}
+            />
+          </div>
+          <div className="col-span-2">
+            <PhoneNumberInput
+              label="Mobile Number"
+              register={register}
+              name="phoneNumber"
+              selectedCountry={selectedCountryCode}
+              setSelectedCountry={setSelectedCountryCode}
+              countries={countryCodes}
+              error={errors.phoneNumber?.message}
+              required={true}
+            />
+          </div>
         </div>
       </div>
 
-      <Button type="submit" variant="solid">
+      <Button type="submit" variant="solid" className="mt-6">
         Register Now
       </Button>
     </form>

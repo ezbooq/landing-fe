@@ -71,7 +71,10 @@ export default function PartnerSignupForm() {
     };
 
     localStorage.setItem("formData", JSON.stringify(formDataWithFullNumber));
-    showToast("Welcome to the Ezbooq Affiliate Program! 🚀 We appreciate you joining us and will keep you updated on the next steps.", "success");
+    showToast(
+      "Welcome to the Ezbooq Affiliate Program! 🚀 We appreciate you joining us and will keep you updated on the next steps.",
+      "success"
+    );
     reset();
   };
 
@@ -91,9 +94,10 @@ export default function PartnerSignupForm() {
         <div className="space-y-4">
           <InputField
             register={register}
-            label="First Name*"
+            label="First Name"
             name="firstName"
             errorMessage={errors.firstName?.message}
+            required={true}
           />
           <InputField
             register={register}
@@ -102,24 +106,26 @@ export default function PartnerSignupForm() {
             errorMessage={errors.lastName?.message}
           />
           <PhoneNumberInput
-            label="Mobile Number*"
+            label="Mobile Number"
             register={register}
             name="mobileNumber"
             selectedCountry={selectedCountryCode}
             setSelectedCountry={setSelectedCountryCode}
             countries={countryCodes}
             error={errors.mobileNumber?.message}
+            required={true}
           />
           <InputField
             register={register}
-            label="Email*"
+            label="Email"
             type="email"
             name="email"
             errorMessage={errors.email?.message}
+            required={true}
           />
           <SelectField
             register={register}
-            label="Country*"
+            label="Country"
             name="country"
             placeholder="Select Country"
             options={countries.map((country) => ({
@@ -127,11 +133,12 @@ export default function PartnerSignupForm() {
               label: country.name,
             }))}
             errorMessage={errors.country?.message}
+            required={true}
           />
-          <Button type="submit" variant="solid">
-            Sign Up
-          </Button>
         </div>
+        <Button type="submit" variant="solid" className="mt-6">
+          Sign Up
+        </Button>
       </div>
     </form>
   );

@@ -28,7 +28,10 @@ const Newsletter: React.FC = () => {
 
   const onSubmit = (data: FormData) => {
     localStorage.setItem("newsletterEmail", JSON.stringify(data));
-    showToast("Thank you for subscribing to the Ezbooq newsletter! 💡 Expect valuable insights, industry tips, and the latest updates to help your business thrive.", "success");
+    showToast(
+      "Thank you for subscribing to the Ezbooq newsletter! 💡 Expect valuable insights, industry tips, and the latest updates to help your business thrive.",
+      "success"
+    );
     reset();
   };
 
@@ -37,10 +40,11 @@ const Newsletter: React.FC = () => {
       <div>
         <h1 className="text-xl">Join Our Weekly Newsletter</h1>
         <p className="text-sm">
-          Get updates of latest updates, new features and why not why not new
-          tips how
-          <br />
-          we help to improve your business
+          Stay ahead with the latest updates, new features, and expert tips on
+          growing your business effortlessly. Get insights on how we’re making
+          business management smarter; straight to your inbox!
+          {/* <br />
+          we help to improve your business */}
         </p>
       </div>
       <form

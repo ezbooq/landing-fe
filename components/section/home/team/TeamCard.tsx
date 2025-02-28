@@ -22,6 +22,9 @@ const TeamCard: React.FC<TeamCardProps> = ({
         height={500}
         className="object-cover h-80 w-60 md:w-full"
       />
+      {/* Dark Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent p-5">
         <h3 className="text-white text-lg font-medium">{title}</h3>
         <p className="text-white text-sm">{description}</p>

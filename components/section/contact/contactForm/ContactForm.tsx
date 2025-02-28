@@ -49,34 +49,39 @@ const ContactForm = () => {
     //     <div className="grid grid-cols-5 items-center max-w-7xl mx-auto px-4 py-8 gap-10">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="space-y-4 w-full col-span-5 md:col-span-2 "
+            className=" w-full col-span-5 md:col-span-2 "
           >
+            <div className="space-y-4">
             <h1 className="text-4xl">Contact us</h1>
-            <p>Fill out the form below to contact us</p>
+            <p>Let’s Talk About Your Digital Future. Send your inquiries to us</p>
             <InputField
               register={register}
-              label="Name*"
+              label="Name"
               name="name"
               placeholder="Enter your name"
               errorMessage={errors.name?.message}
+              required={true}
             />
             <InputField
               register={register}
-              label="Email*"
+              label="Email"
               type="email"
               name="email"
               placeholder="Enter your email"
               errorMessage={errors.email?.message}
+              required={true}
             />
             <InputField
               register={register}
-              label="Message*"
+              label="Message"
               name="message"
               type="textarea"
               // value={FormData.message}
               placeholder="Type your message..."
               errorMessage={errors.message?.message}
+              required={true}
             />
+            </div>
             {/* <div className="flex items-center gap-2">
               <input
                 {...register("isAgreed")}
@@ -93,7 +98,7 @@ const ContactForm = () => {
               )}
             </div> */}
 
-            <Button type="submit" variant="solid">
+            <Button type="submit" variant="solid" className="mt-6">
               Submit
             </Button>
           </form>

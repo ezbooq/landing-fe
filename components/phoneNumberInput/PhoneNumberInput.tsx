@@ -11,6 +11,7 @@ type PhoneNumberInputProps = {
   error?: string;
   register: any;
   name: string;
+  required?: boolean;
 };
 
 const PhoneNumberInput: React.FC<PhoneNumberInputProps> = ({
@@ -19,9 +20,9 @@ const PhoneNumberInput: React.FC<PhoneNumberInputProps> = ({
   setSelectedCountry,
   name,
   register,
-
   countries,
   error,
+  required = false,
 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -33,7 +34,7 @@ const PhoneNumberInput: React.FC<PhoneNumberInputProps> = ({
     <div className="flex flex-col w-full">
       {label && (
         <label htmlFor={name} className="mb-1 text-sm font-medium text-black">
-          {label}
+          {label}{required && <span className="text-red-500">*</span>}
         </label>
       )}
       <div className="flex items-start space-x-4">

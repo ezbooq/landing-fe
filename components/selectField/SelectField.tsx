@@ -9,6 +9,7 @@ type SelectFieldProps = {
   errorMessage?: string;
   className?: string;
   disabled?: boolean;
+  required?: boolean;
 };
 
 const SelectField: React.FC<SelectFieldProps> = ({
@@ -20,12 +21,13 @@ const SelectField: React.FC<SelectFieldProps> = ({
   errorMessage,
   className = "",
   disabled = false,
+  required = false
 }) => {
   return (
     <div className={`flex flex-col w-full ${className}`}>
       {label && (
         <label htmlFor={name} className="mb-1 text-sm font-medium text-black">
-          {label}
+          {label}{required && <span className="text-red-500">*</span>}
         </label>
       )}
       {/* <div className="relative"> */}

@@ -5,7 +5,7 @@ import Button from "@/components/button/Button";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative max-w-full">
+    <section className="relative max-w-full p-5">
       {/* Left Background */}
       {/* <div
         className="hidden lg:inline absolute inset-y-0 left-0 w-80 h-full bg-cover bg-no-repeat bg-left"
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           backgroundImage: "url('/backgroundCircleLeft.png')",
         }}
       ></div> */}
-      <div className="relative text-center mb-8 mt-8 sm:mt-4 max-w-7xl mx-auto sm:pt-10 px-5 bg-secondary rounded-t-lg shadow-md">
+      <div className="relative text-center mb-8 mt-8 sm:mt-4 max-w-full mx-auto sm:pt-10 px-5 bg-secondary rounded-t-lg">
         {/* Content */}
         <h1 className="relative text-2xl sm:text-4xl font-medium mb-4 z-10">
           Empower Your Business with{" "}

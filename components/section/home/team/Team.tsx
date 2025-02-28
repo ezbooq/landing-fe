@@ -10,28 +10,28 @@ const Team: React.FC = () => {
     {
       title: "Owners",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Fermentum tincidunt auctor quam lobortis urna velit.",
+        "Gain comprehensive insights and control over your operations with real-time analytics and automated processes, enabling strategic decision-making and efficient management.",
       imageSrc: "/Personimg1.jpg",
       altText: "Owner Image",
     },
     {
       title: "Employees",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Fermentum tincidunt auctor quam lobortis urna velit.",
+        "Empower your team with intuitive tools that streamline tasks, foster collaboration within the team while boosting productivity, ensuring they can focus on what matters most.",
       imageSrc: "/Personimg2.jpg",
       altText: "Employee Image",
     },
     {
       title: "Managers",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Fermentum tincidunt auctor quam lobortis urna velit.",
+        "Simplify procurement and supply chain interactions through a unified interface that enhances communication, tracking, and relationship management.",
       imageSrc: "/Personimg3.jpg",
       altText: "Manager Image",
     },
     {
       title: "Customers",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Fermentum tincidunt auctor quam lobortis urna velit.",
+        "Deliver personalized experiences and responsive support with AI-enhanced customer relationship management, building trust and driving engagement.",
       imageSrc: "/Personimg4.jpg",
       altText: "Customer Image",
     },
