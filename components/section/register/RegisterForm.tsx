@@ -111,7 +111,7 @@ export default function RegisterForm() {
     >
       <div className="space-y-4">
         <h1 className="text-4xl">Register Now</h1>
-        <p>Fill out the form below to contact us</p>
+        <p>Register now to simplify bookings, automate operations, and grow your business effortlessly with Ezbooq!</p>
         <div className="grid grid-cols-2 gap-4">
           <InputField
             register={register}

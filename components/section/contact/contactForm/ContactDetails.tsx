@@ -21,18 +21,18 @@ const ContactDetails = () => {
       </div>
       <div className="flex flex-col gap-4 items-center sm:items-start mb-3">
         <PiChatTextBold className="text-primary" size={30} />
-        <h2 className="text-xl font-semibold">Live Chat</h2>
+        <h2 className="text-xl font-semibold">Address</h2>
         <p className="text-sm text-black text-center sm:text-left">
           Visit us at our trusted location, where professionalism meets
           community commitment! Ready to support your business needs.
         </p>
-        <a href="tel:+1(555) 000-0000" className="underline underline-offset-2">
-          +1(555) 000-0000
+        <a className="underline underline-offset-2">
+        123 Sample St, Sydney NSW 2000 AU
         </a>
       </div>
       <div className="flex flex-col gap-4 items-center sm:items-start mb-3">
         <FiPhone className="text-primary" size={30} />
-        <h2 className="text-xl font-semibold">Live Chat</h2>
+        <h2 className="text-xl font-semibold">Phone</h2>
         <p className="text-sm text-black text-center sm:text-left">
           Call us for instant, expert support, personalized service and prompt
           solutions at your fingertips.

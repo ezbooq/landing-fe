@@ -2,7 +2,7 @@
 
 import Button from "@/components/button/Button";
 import { useRouter } from "next/navigation";
-import { CiStar } from "react-icons/ci";
+import { FaRegStar } from "react-icons/fa";
 
 const features = [
   {
@@ -83,7 +83,7 @@ export default function AffiliateMarketer() {
               key={index}
               className="flex flex-col items-center justify-center gap-2"
             >
-              <CiStar size={25} className="text-primary" />
+              <FaRegStar size={25} className="text-primary" />
               <h2 className="text-lg font-medium">{feature.title}</h2>
               <p className="text-sm text-center">{feature.description}</p>
             </div>

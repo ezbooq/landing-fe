@@ -11,10 +11,18 @@ const FAQ: React.FC = () => {
           still have questions (doubts) that can be answered.
         </p>
         <div className="flex flex-col gap-4">
-            <FAQCard question="What is the return policy?" answer="We have a 30-day return policy. If you are not satisfied with your purchase, you can return it within 30 days." />
-            <FAQCard question="What is the return policy?" answer="We have a 30-day return policy. If you are not satisfied with your purchase, you can return it within 30 days." />
-            <FAQCard question="What is the return policy?" answer="We have a 30-day return policy. If you are not satisfied with your purchase, you can return it within 30 days." />
-            <FAQCard question="What is the return policy?" answer="We have a 30-day return policy. If you are not satisfied with your purchase, you can return it within 30 days." />
+          <FAQCard
+            question="What is Ezbooq?"
+            answer="We are simplified SaaS solution with with AI innovation to help small medium business to manage, grow and generate sales as all in one stop."
+          />
+          <FAQCard
+            question="How can I start using?"
+            answer="You can now sign-up for 14days free and request for a free demo and a help you setup your business operations with Ezbooq."
+          />
+          <FAQCard
+            question="Who is Ezbooq? system for."
+            answer="Ezbooq is a one stop solution for service based business across the global, you can manage your inventory, manage your bookings with AI simplified solution,  Also you can start managing and running your own business campaigns for all your customers, leads and others with E-mail and SMS."
+          />
         </div>
       </div>
     </section>

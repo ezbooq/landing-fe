@@ -28,9 +28,7 @@ const Hero: React.FC = () => {
           <span className="text-primary">Ezbooq</span>
         </h1>
         <p className="relative text-black text-sm sm:text-base max-w-4xl mx-auto mb-6 z-10">
-          Ezbooq is in development to revolutionize booking, customer
-          management, staff management, and more for service providers across
-          industries. Be part of the journey!
+        EzBooq is transforming booking, customer & staff management for service providers. Join us in revolutionizing the industry!
         </p>
         <div className="relative flex flex-col sm:flex-row justify-center gap-4 z-10">
           <Button variant="solid" onClick={() => {}}>
