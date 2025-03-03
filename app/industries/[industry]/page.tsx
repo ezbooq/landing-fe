@@ -64,9 +64,9 @@ const IndustryPage = () => {
           {Industry.features.map((feature, index) => (
             <div key={index} className="flex flex-col gap-4 text-black">
               <FaRegStar className="text-primary" size={25} />
-              <h1 className="text-xl font-semibold">{feature.name}</h1>
+         
               <p className="text-sm sm:text-base text-black mb-8">
-                {feature.description}
+                {feature}
               </p>
             </div>
           ))}

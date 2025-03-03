@@ -11,26 +11,10 @@ export const Industries = [
     description2:
       "Manage service records, assign skilled technicians, and send timely reminders using our intuitive dashboard. EzBooq integrates seamlessly into your workflow, reducing paperwork and boosting repeat business. Enhance customer satisfaction with digital payment options and personalized service that drives reputation and growth.",
     features: [
-      {
-        name: "Exterior Wash",
-        description:
-          "Exterior Wash is the process of cleaning the exterior of the car.",
-      },
-      {
-        name: "Interior Cleaning",
-        description:
-          "Interior Cleaning is the process of cleaning the interior of the car.",
-      },
-      {
-        name: "Waxing",
-        description:
-          "Waxing is the process of applying wax to the car to protect the paint.",
-      },
-      {
-        name: "Polishing",
-        description:
-          "Polishing is the process of removing scratches and swirl marks from the paint.",
-      },
+      "Keep your schedule full and organized by reducing last-minute cancellations with automated appointment reminders.",
+      "Assign the right technician for each job based on past service history and expertise.",
+      "peed up payment collection with automated invoicing and secure digital transactions.",
+      "Build long-term customer loyalty by offering personalized service recommendations based on vehicle history.",
     ],
   },
   {
@@ -45,26 +29,10 @@ export const Industries = [
     description2:
       "Coordinate teams, track chemical usage, and manage memberships from one centralized interface. EzBooq’s real-time insights allow you to optimize workflows and enhance service quality. Automate billing and send reminders effortlessly to ensure a consistently superior, customer-focused car wash experience.",
     features: [
-      {
-        name: "Exterior Wash",
-        description:
-          "Exterior Wash is the process of cleaning the exterior of the car.",
-      },
-      {
-        name: "Interior Cleaning",
-        description:
-          "Interior Cleaning is the process of cleaning the interior of the car.",
-      },
-      {
-        name: "Waxing",
-        description:
-          "Waxing is the process of applying wax to the car to protect the paint.",
-      },
-      {
-        name: "Polishing",
-        description:
-          "Polishing is the process of removing scratches and swirl marks from the paint.",
-      },
+      "Eliminate long wait times by allowing customers to book in advance and track service status in real-time.",
+      "Reduce chemical waste and manage supplies efficiently to cut unnecessary costs.",
+      "Automate membership renewals and payments to ensure steady revenue without chasing customers.",
+      "Keep customers coming back with consistent service quality and timely maintenance reminders.",
     ],
   },
   {
@@ -79,26 +47,10 @@ export const Industries = [
     description2:
       "Assign cleaning crews, optimize routes, and automate follow-up communications with ease. EzBooq centralizes operations and inventory management to ensure consistent quality. Enhance customer satisfaction through digital payments, prompt reminders, and seamless rescheduling that drives loyal, repeat business.",
     features: [
-      {
-        name: "Bathing",
-        description:
-          "Bathing is the process of cleaning the dog's coat and skin.",
-      },
-      {
-        name: "Haircut",
-        description:
-          "Haircut is the process of trimming the dog's hair to a desired length.",
-      },
-      {
-        name: "Nail Trimming",
-        description:
-          "Nail Trimming is the process of cutting the dog's nails to a safe length.",
-      },
-      {
-        name: "Ear Cleaning",
-        description:
-          "Ear Cleaning is the process of cleaning the dog's ears to prevent infections.",
-      },
+      "Prevent double bookings and missed appointments with an automated scheduling system that keeps everything on track.",
+      "Get paid faster with seamless invoicing and easy online payment options for clients.",
+      "Reduce travel time and fuel costs by optimizing routes for your cleaning staff.",
+      "Keep customers happy and informed with real-time updates on job progress and completion.",
     ],
   },
   {
@@ -113,26 +65,10 @@ export const Industries = [
     description2:
       "Manage client preferences, track grooming sessions, and promote retail products from one intuitive dashboard. EzBooq automates follow-ups and invoicing, enabling you to deliver tailored services that keep pet owners returning and foster a reputation for exceptional care.",
     features: [
-      {
-        name: "Vacuuming",
-        description:
-          "Vacuuming is the process of removing dirt and debris from the carpet.",
-      },
-      {
-        name: "Shampooing",
-        description:
-          "Shampooing is the process of applying shampoo to the carpet to remove stains and odors.",
-      },
-      {
-        name: "Steam Cleaning",
-        description:
-          "Steam Cleaning is the process of using steam to clean the carpet.",
-      },
-      {
-        name: "Dry Cleaning",
-        description:
-          "Dry Cleaning is the process of using a dry cleaning solution to clean the carpet.",
-      },
+      "Minimize last-minute cancellations with automated reminders that keep your schedule organized.",
+      "Store detailed pet profiles to provide a stress-free grooming experience tailored to each animal’s needs.",
+      "Make payments hassle-free with automated billing and easy checkout options.",
+      "Keep pet owners coming back with personalized follow-ups and exclusive loyalty rewards.",
     ],
   },
   {
@@ -147,25 +83,10 @@ export const Industries = [
     description2:
       "Assign dog walkers, coordinate routes, and send detailed walk updates through our intuitive platform. EzBooq’s integrated GPS tracking and appointment management ensure timely, hassle-free service. Enjoy smoother communication and prompt billing that converts new inquiries into loyal, repeat clients.",
     features: [
-      {
-        name: "Dusting",
-        description: "Dusting is the process of removing dust from surfaces.",
-      },
-      {
-        name: "Vacuuming",
-        description:
-          "Vacuuming is the process of removing dirt and debris from floors.",
-      },
-      {
-        name: "Mopping",
-        description:
-          "Mopping is the process of cleaning floors with a mop and water.",
-      },
-      {
-        name: "Bathroom Cleaning",
-        description:
-          "Bathroom Cleaning is the process of cleaning the bathroom.",
-      },
+      "Plan efficient walking routes to save time and take on more clients each day.",
+      "Give pet owners peace of mind with real-time updates and check-ins during walks.",
+      "Eliminate billing confusion with automatic invoicing and payment tracking.",
+      "Secure steady bookings with recurring appointments and membership plans.",
     ],
   },
   {
@@ -180,23 +101,10 @@ export const Industries = [
     description2:
       "Effortlessly manage job assignments, track cleaning supplies, and automate follow-up communications. EzBooq’s real-time analytics and digital invoicing simplify workflows, ensuring consistent service quality. Enhance customer trust with transparent pricing and swift scheduling that maximizes repeat business.",
     features: [
-      {
-        name: "Dog Walking",
-        description: "Dog Walking is the process of taking a dog for a walk.",
-      },
-      {
-        name: "Pet Sitting",
-        description:
-          "Pet Sitting is the process of caring for a pet while the owner is away.",
-      },
-      {
-        name: "Pet Feeding",
-        description: "Pet Feeding is the process of feeding a pet.",
-      },
-      {
-        name: "Pet Grooming",
-        description: "Pet Grooming is the process of grooming a pet.",
-      },
+      "Reduce scheduling conflicts by automating bookings and service requests.",
+      "Improve cash flow with instant digital invoices and online payments.",
+      "Track equipment usage and cleaning supplies to avoid running out unexpectedly.",
+      "Keep clients coming back by sending timely reminders for deep cleaning services.",
     ],
   },
   {
@@ -211,26 +119,10 @@ export const Industries = [
     description2:
       "Coordinate service teams, monitor water quality, and automate maintenance reminders through our centralized dashboard. EzBooq streamlines operational tasks and enhances customer communication, ensuring timely services.",
     features: [
-      {
-        name: "Skimming",
-        description:
-          "Skimming is the process of removing leaves, bugs, and other debris from the surface of the water.",
-      },
-      {
-        name: "Vacuuming",
-        description:
-          "Vacuuming is the process of removing dirt and debris from the bottom of the pool.",
-      },
-      {
-        name: "Brushing",
-        description:
-          "Brushing is the process of scrubbing the sides and bottom of the pool to remove algae and other impurities.",
-      },
-      {
-        name: "Chemical Treatment",
-        description:
-          "Chemical treatment is the process of adding chemicals to the water to kill bacteria and algae.",
-      },
+      "Avoid last-minute cancellations with appointment reminders and real-time service updates.",
+      "Keep pool maintenance efficient by tracking water quality and chemical levels automatically.",
+      "Simplify billing with digital invoices and secure online payments.",
+      "Increase repeat business with personalized service plans for each client.",
     ],
   },
   {
@@ -240,30 +132,15 @@ export const Industries = [
     image: ["/Carpet cleaning.jpg"],
     subTitle1: "Streamlined Scheduling & Billing",
     description1:
-      "EzBooq elevates lawn care services with an intuitive scheduling system, automated billing, and efficient route planning. Focus on creating lush landscapes while our platform handles administrative tasks smoothly.",
+      "EzBooq elevates lawn care services with an intuitive scheduling system, automated billing, and efficient route planning. Focus on cr eating lush landscapes while our platform handles administrative tasks smoothly.",
     subTitle2: "Optimized Crew Management",
     description2:
       "Assign teams, schedule recurring visits, and send automatic service reminders from a centralized dashboard. EzBooq’s real-time insights help optimize resource allocation and track inventory efficiently.",
     features: [
-      {
-        name: "Mowing",
-        description:
-          "Mowing is the process of cutting the grass to a desired length.",
-      },
-      {
-        name: "Edging",
-        description:
-          "Edging is the process of trimming the grass along the edges of the lawn.",
-      },
-      {
-        name: "Weeding",
-        description: "Weeding is the process of removing weeds from the lawn.",
-      },
-      {
-        name: "Fertilizing",
-        description:
-          "Fertilizing is the process of adding nutrients to the soil to promote healthy growth.",
-      },
+      "Ensure a smooth schedule by automating appointment bookings and reminders.",
+      "Increase efficiency by assigning the right crew for each lawn care job.",
+      "Monitor equipment and track material usage to prevent waste and extra costs.",
+      "Retain clients by offering seasonal service plans and timely follow-ups.",
     ],
   },
   {
@@ -278,26 +155,10 @@ export const Industries = [
     description2:
       "Coordinate move crews, generate instant quotes, and manage routes from a centralized dashboard. EzBooq automates invoicing and securely tracks inventory, ensuring transparent, stress-free moves.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Reduce customer stress by providing real-time tracking updates during the move.",
+      "Prevent scheduling conflicts with an automated booking system that keeps everything organized.",
+      "Avoid lost or misplaced items by maintaining an accurate inventory list.",
+      "Boost customer trust by offering clear pricing, easy quotes, and digital invoices.",
     ],
   },
   {
@@ -312,26 +173,10 @@ export const Industries = [
     description2:
       "Assign technicians, track supply usage, and automate promotions via a centralized dashboard. EzBooq delivers real-time scheduling insights and digital payment integration that enhance service delivery and cultivate repeat business.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Fill appointment slots efficiently by minimizing cancellations with automated reminders.",
+      "Speed up checkout with seamless digital payment options for customers.",
+      "Keep supplies stocked by tracking inventory and product usage accurately.",
+      "Encourage repeat visits with personalized offers based on past services.",
     ],
   },
   {
@@ -346,26 +191,10 @@ export const Industries = [
     description2:
       "Manage treatment schedules, track product usage, and send wellness follow-ups via our intuitive dashboard. EzBooq’s real-time analytics streamline resource allocation and boost client satisfaction. Deliver consistently rejuvenating experiences that drive loyalty and elevate your spa’s reputation.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Avoid no-shows and gaps in scheduling with automated appointment confirmations.",
+      "Keep clients relaxed by offering a seamless check-in and payment experience.",
+      "Maintain an organized inventory to prevent product shortages.",
+      "Increase customer retention with personalized wellness plans and follow-ups.",
     ],
   },
   {
@@ -380,26 +209,10 @@ export const Industries = [
     description2:
       "Manage session bookings, track individual preferences, and automate billing seamlessly with our intuitive dashboard. EzBooq simplifies follow-up communications and digital invoicing, enhancing client satisfaction and ensuring your massage practice runs smoothly and profitably.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Prevent last-minute cancellations with automated reminders that keep clients accountable.",
+      "Offer a tailored experience by tracking client preferences and past sessions.",
+      "Speed up transactions with digital invoices and secure payment options.",
+      "Keep clients engaged with personalized wellness packages and follow-up messages.",
     ],
   },
   {
@@ -414,26 +227,10 @@ export const Industries = [
     description2:
       "Coordinate cleaning crews, schedule maintenance visits, and automate customer notifications using our centralized dashboard. EzBooq simplifies inventory tracking and optimizes resource allocation, ensuring consistent service quality and enhanced customer satisfaction that builds trust and encourages repeat business.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Eliminate scheduling conflicts by automating appointment bookings and reminders.",
+      "Get jobs done faster by optimizing routes for efficiency.",
+      "Track materials and supplies to prevent waste and manage costs effectively.",
+      "Build long-term customer relationships with regular maintenance plans.",
     ],
   },
   {
@@ -448,26 +245,10 @@ export const Industries = [
     description2:
       "Manage client appointments, track consultation histories, and automate follow-up communications with ease. EzBooq’s centralized dashboard supports secure virtual meetings and simplifies billing, ensuring your legal practice operates smoothly while building lasting professional relationships.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Save valuable time by automating appointment scheduling and reducing missed meetings.",
+      "Securely manage case files and client documents for easy access",
+      "Avoid billing disputes with clear, automated invoices and tracking.",
+      "Strengthen client relationships with timely follow-ups and legal updates.",
     ],
   },
   {
@@ -482,26 +263,10 @@ export const Industries = [
     description2:
       "Enhance your financial consultancy with a centralized dashboard that manages appointments, records, and precise invoicing. EzBooq automates follow-up communications and offers real-time analytics, allowing you to build lasting client relationships and ensure transparency and efficiency in every transaction.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Reduce administrative work by automating appointment bookings and client follow-ups.",
+      "Ensure accurate record-keeping with secure digital document management.",
+      "Streamline invoicing and payment tracking for faster transactions.",
+      "Improve client satisfaction with automated tax reminders and financial insights.",
     ],
   },
   {
@@ -516,26 +281,10 @@ export const Industries = [
     description2:
       "Streamline class scheduling, track student progress, and automate fee collection through our intuitive dashboard. EzBooq centralizes lesson management and communications, ensuring seamless interactions, timely session updates, and improved operational efficiency that enhances student satisfaction and tutor reputation.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Prevent scheduling mix-ups by automating lesson bookings and reminders.",
+      "Track student progress easily with organized digital records.",
+      "Get paid on time with seamless invoicing and payment options.",
+      "Keep students engaged with personalized learning plans and feedback.",
     ],
   },
   {
@@ -550,26 +299,10 @@ export const Industries = [
     description2:
       "Facilitate seamless consultations with a centralized dashboard that manages appointments, records outcomes, and automates communications. EzBooq supports secure video calls, digital documentation, and personalized follow-up messages, ensuring every session runs smoothly and builds lasting professional relationships.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Save time by automating appointment scheduling and avoiding last-minute cancellations.",
+      "Keep client records secure and accessible for seamless consultation sessions.",
+      "Simplify invoicing and payment collection with automated systems.",
+      "Strengthen client relationships with personalized follow-ups and insights.",
     ],
   },
   {
@@ -584,26 +317,10 @@ export const Industries = [
     description2:
       "Elevate your practice with a centralized dashboard that manages appointments, tracks progress, and automates follow-ups. EzBooq’s real-time insights and communication tools ensure smoother client interactions and efficient session management, driving conversions and long-term growth in your coaching business.",
     features: [
-      {
-        name: "Packing",
-        description:
-          "Packing is the process of putting items into boxes and preparing them for transport.",
-      },
-      {
-        name: "Loading",
-        description:
-          "Loading is the process of putting items into a moving truck.",
-      },
-      {
-        name: "Transporting",
-        description:
-          "Transporting is the process of moving items from one location to another.",
-      },
-      {
-        name: "Unloading",
-        description:
-          "Unloading is the process of taking items out of a moving truck.",
-      },
+      "Manage multiple clients efficiently with automated appointment scheduling.",
+      "Track client progress with detailed session history and personalized plans.",
+      "Ensure hassle-free payments with automated invoicing and reminders.",
+      "Boost client engagement with follow-ups, challenges, and personalized support.",
     ],
   },
 ];
