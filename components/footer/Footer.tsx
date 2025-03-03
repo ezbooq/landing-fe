@@ -15,23 +15,23 @@ import Newsletter from "../newsletter/Newsletter";
 const Footer: React.FC = () => {
   const columns = [
     {
-      title: "Column One",
+      title: "Industries",
       links: [
-        { label: "Link One", href: "#" },
-        { label: "Link Two", href: "#" },
-        { label: "Link Three", href: "#" },
-        { label: "Link Four", href: "#" },
-        { label: "Link Five", href: "#" },
+        { label: "Car Wash", href: "/industries/car-wash" },
+        { label: "Home Cleaning", href: "/industries/home-cleaning" },
+        { label: "Spa / Saloon", href: "/industries/spa" },
+        { label: "Coaches / Tutors", href: "/industries/all-coaches" },
+        { label: "View More", href: "/industries" },
       ],
     },
     {
-      title: "Industries",
+      title: "Quick Links",
       links: [
-        { label: "Link Six", href: "#" },
-        { label: "Link Seven", href: "#" },
-        { label: "Link Eight", href: "#" },
-        { label: "Link Nine", href: "#" },
-        { label: "Link Ten", href: "#" },
+        { label: "Learn More", href: "/industries" },
+        { label: "Register Now", href: "/register" },
+        { label: "Earn More", href: "/affiliate-marketer" },
+        { label: "Contact Us", href: "/contact-us" },
+        { label: "Watch Now", href: "https://www.youtube.com/@Ezbooq" },
       ],
     },
   ];

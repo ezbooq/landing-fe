@@ -20,10 +20,10 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
       </div>
       <h3 className="text-lg font-semibold">{title}</h3>
       <p className="text-sm mb-4">{description}</p>
-      <button className="flex items-start justify-start bg-transparent text-black text-sm font-semibold">
+      {/* <button className="flex items-start justify-start bg-transparent text-black text-sm font-semibold">
         <div className="truncate">Learn More</div>
         <span className="text-sm ms-2">&rarr;</span>
-      </button>
+      </button> */}
     </div>
   );
 };

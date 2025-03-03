@@ -2,8 +2,18 @@
 
 import Image from "next/image";
 import Button from "@/components/button/Button";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import PopUpModal from "@/components/popUpModal/PopUpModal";
 
 const Hero: React.FC = () => {
+  const router = useRouter();
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
   return (
     <section className="relative max-w-full p-5">
       {/* Left Background */}
@@ -28,13 +38,21 @@ const Hero: React.FC = () => {
           <span className="text-primary">Ezbooq</span>
         </h1>
         <p className="relative text-black text-sm sm:text-base max-w-4xl mx-auto mb-6 z-10">
-        EzBooq is transforming booking, customer & staff management for service providers. Join us in revolutionizing the industry!
+          EzBooq is transforming booking, customer & staff management for
+          service providers. Join us in revolutionizing the industry!
         </p>
         <div className="relative flex flex-col sm:flex-row justify-center gap-4 z-10">
-          <Button variant="solid" onClick={() => {}}>
+          {/* <Link href="/register"> */}
+          <Button
+            variant="solid"
+            onClick={() => {
+              router.push("/register");
+            }}
+          >
             Get started
           </Button>
-          <Button variant="outline" onClick={() => {}}>
+          {/* </Link> */}
+          <Button variant="outline" onClick={() => handleOpenModal()}>
             Learn more
           </Button>
         </div>
@@ -52,6 +70,19 @@ const Hero: React.FC = () => {
       </div>
       {/* Overlay to ensure content visibility */}
       {/* <div className="absolute inset-0 z-0 bg-transparent"></div> */}
+      <PopUpModal
+        open={showModal}
+        onClose={() => {
+          setShowModal(false);
+        }}
+      >
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/aL27fX5kv9U"
+          title="Introduction To WiseGPT"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe>
+      </PopUpModal>
     </section>
   );
 };

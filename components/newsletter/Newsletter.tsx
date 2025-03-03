@@ -7,8 +7,13 @@ import { z } from "zod";
 import Button from "../button/Button";
 import InputField from "../inputField/InputField";
 import AxiosInstance from "@/services/AxiosInstance";
+import { useState } from "react";
 
 const Newsletter: React.FC = () => {
+
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState("");
+
   const schema = z.object({
     email: z
       .string()
@@ -28,25 +33,29 @@ const Newsletter: React.FC = () => {
   });
 
   const onSubmit = async (data: FormData) => {
+    setLoading(true);
+    setServerError(""); 
     try {
       const response = await AxiosInstance.post("/newsletter/create", data);
 
       if (!response.data.success) {
         throw new Error(
-          response.data.error?.message ||
-            "There was an error. Please try again."
+          response.data.error?.message || "Something went wrong. Please try again."
         );
       }
+      
+      showToast(
+        "Thank you for subscribing to the Ezbooq newsletter! 💡 Expect valuable insights, industry tips, and the latest updates to help your business thrive.",
+        "success"
+      );
 
-      if (response.data.success) {
-        showToast(
-          "Thank you for subscribing to the Ezbooq newsletter! 💡 Expect valuable insights, industry tips, and the latest updates to help your business thrive.",
-          "success"
-        );
-        reset();
-      }
+      reset();
     } catch (error) {
-      console.error(error);
+      setServerError(
+        error instanceof Error ? error.message : "An unexpected error occurred."
+      );
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -67,14 +76,19 @@ const Newsletter: React.FC = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col sm:flex-row items-center gap-3"
       >
-        <InputField
-          register={register}
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          errorMessage={errors.email?.message}
-        />
-        <Button type="submit" variant="solid" className="w-full">
+         <div className="flex flex-col w-full">
+          <InputField
+            register={register}
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            errorMessage={errors.email?.message}
+          />
+          {serverError && (
+            <p className="text-red-500 text-sm mt-1">{serverError}</p>
+          )}
+        </div>
+        <Button type="submit" variant="solid" className="w-full" loading={loading}>
           Subscribe Now
         </Button>
       </form>

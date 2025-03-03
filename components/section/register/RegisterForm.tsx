@@ -12,6 +12,7 @@ import { useState } from "react";
 import { Country } from "@/types/common";
 import dynamic from "next/dynamic";
 import parsePhoneNumberFromString from "libphonenumber-js";
+import AxiosInstance from "@/services/AxiosInstance";
 
 const SelectField = dynamic(
   () => import("@/components/selectField/SelectField"),
@@ -47,6 +48,8 @@ export default function RegisterForm() {
   const [selectedCountryCode, setSelectedCountryCode] = useState<Country>(
     countryCodes[126]
   );
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState("");
   const { showToast } = useToast();
 
   const formSchema = z.object({
@@ -88,7 +91,7 @@ export default function RegisterForm() {
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = (data: FormData) => {
+  const onSubmit = async (data: FormData) => {
     const fullPhoneNumber = `${selectedCountryCode.dialingCode}${data.phoneNumber}`;
 
     const formDataWithFullNumber = {
@@ -96,12 +99,29 @@ export default function RegisterForm() {
       mobileNumber: fullPhoneNumber, // Ensure the phone number includes the country code
     };
 
-    localStorage.setItem("formData", JSON.stringify(formDataWithFullNumber));
-    showToast(
-      "Thank you for signing up with Ezbooq! 🎉 We're excited to have you on board. Stay tuned for updates on how Ezbooq can help your business grow.",
-      "success"
-    );
-    reset();
+    setLoading(true);
+    setServerError("");
+    try {
+      const response = await AxiosInstance.post("/user/create", formDataWithFullNumber);
+
+      if (!response.data.success) {
+        throw new Error(
+          response.data.error?.message ||
+            "Something went wrong. Please try again."
+        );
+      }
+      showToast(
+        "Thank you for signing up with Ezbooq! 🎉 We're excited to have you on board. Stay tuned for updates on how Ezbooq can help your business grow.",
+        "success"
+      );
+      reset();
+    } catch (error) {
+      setServerError(
+        error instanceof Error ? error.message : "An unexpected error occurred."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -111,7 +131,10 @@ export default function RegisterForm() {
     >
       <div className="space-y-4">
         <h1 className="text-4xl">Register Now</h1>
-        <p>Register now to simplify bookings, automate operations, and grow your business effortlessly with Ezbooq!</p>
+        <p>
+          Register now to simplify bookings, automate operations, and grow your
+          business effortlessly with Ezbooq!
+        </p>
         <div className="grid grid-cols-2 gap-4">
           <InputField
             register={register}
@@ -188,8 +211,10 @@ export default function RegisterForm() {
           </div>
         </div>
       </div>
-
-      <Button type="submit" variant="solid" className="mt-6">
+      {serverError && (
+        <p className="text-red-500 text-sm mt-3">{serverError}</p>
+      )}
+      <Button type="submit" variant="solid" className="mt-6" loading={loading}>
         Register Now
       </Button>
     </form>

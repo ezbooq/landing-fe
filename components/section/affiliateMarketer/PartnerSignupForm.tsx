@@ -12,6 +12,7 @@ import { useState } from "react";
 import { parsePhoneNumberFromString } from "libphonenumber-js";
 import dynamic from "next/dynamic";
 import PhoneNumberInput from "@/components/phoneNumberInput/PhoneNumberInput";
+import AxiosInstance from "@/services/AxiosInstance";
 const SelectField = dynamic(
   () => import("@/components/selectField/SelectField"),
   { ssr: false }
@@ -21,6 +22,8 @@ export default function PartnerSignupForm() {
   const [selectedCountryCode, setSelectedCountryCode] = useState<Country>(
     countryCodes[126]
   );
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState("");
   const { showToast } = useToast();
 
   const formSchema = z.object({
@@ -62,7 +65,7 @@ export default function PartnerSignupForm() {
     },
   });
 
-  const onSubmit = (data: FormData) => {
+  const onSubmit = async (data: FormData) => {
     const fullPhoneNumber = `${selectedCountryCode.dialingCode}${data.mobileNumber}`;
 
     const formDataWithFullNumber = {
@@ -70,12 +73,29 @@ export default function PartnerSignupForm() {
       mobileNumber: fullPhoneNumber, // Ensure the phone number includes the country code
     };
 
-    localStorage.setItem("formData", JSON.stringify(formDataWithFullNumber));
-    showToast(
-      "Welcome to the Ezbooq Affiliate Program! 🚀 We appreciate you joining us and will keep you updated on the next steps.",
-      "success"
-    );
-    reset();
+    setLoading(true);
+    setServerError("");
+    try {
+      const response = await AxiosInstance.post("/affiliate-marketer/create", formDataWithFullNumber);
+
+      if (!response.data.success) {
+        throw new Error(
+          response.data.error?.message ||
+            "Something went wrong. Please try again."
+        );
+      }
+      showToast(
+        "Welcome to the Ezbooq Affiliate Program! 🚀 We appreciate you joining us and will keep you updated on the next steps.",
+        "success"
+      );
+      reset();
+    } catch (error) {
+      setServerError(
+        error instanceof Error ? error.message : "An unexpected error occurred."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -136,7 +156,10 @@ export default function PartnerSignupForm() {
             required={true}
           />
         </div>
-        <Button type="submit" variant="solid" className="mt-6">
+        {serverError && (
+          <p className="text-red-500 text-sm mt-3">{serverError}</p>
+        )}
+        <Button type="submit" variant="solid" className="mt-6" loading={loading}>
           Sign Up
         </Button>
       </div>
