@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <Banner />
       <div className="flex justify-between items-center p-5 max-w-7xl mx-auto">
         <NavLink href="/" onClick={() => setIsDropdownOpen(false)}>
-          <Image src="/logo.svg" alt="Logo" width={120} height={50} />
+          <Image src="/logo.png" alt="Logo" width={120} height={50} />
         </NavLink>
 
         <NavMenu

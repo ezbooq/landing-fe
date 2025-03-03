@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
         <Newsletter />
         <div className="flex flex-col sm:flex-row justify-between gap-6 border-t border-gray-300 pt-6">
           <div className="">
-            <Image src="/logo.svg" alt="Logo" width={120} height={50} />
+            <Image src="/logo.png" alt="Logo" width={120} height={50} />
             <h4 className="font-bold mt-3">Address</h4>
             <p className="font-extralight text-sm">
               New York, USA <br />
