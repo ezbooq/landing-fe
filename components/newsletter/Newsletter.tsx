@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import Button from "../button/Button";
 import InputField from "../inputField/InputField";
+import AxiosInstance from "@/services/AxiosInstance";
 
 const Newsletter: React.FC = () => {
   const schema = z.object({
@@ -26,13 +27,27 @@ const Newsletter: React.FC = () => {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data: FormData) => {
-    localStorage.setItem("newsletterEmail", JSON.stringify(data));
-    showToast(
-      "Thank you for subscribing to the Ezbooq newsletter! 💡 Expect valuable insights, industry tips, and the latest updates to help your business thrive.",
-      "success"
-    );
-    reset();
+  const onSubmit = async (data: FormData) => {
+    try {
+      const response = await AxiosInstance.post("/newsletter/create", data);
+
+      if (!response.data.success) {
+        throw new Error(
+          response.data.error?.message ||
+            "There was an error. Please try again."
+        );
+      }
+
+      if (response.data.success) {
+        showToast(
+          "Thank you for subscribing to the Ezbooq newsletter! 💡 Expect valuable insights, industry tips, and the latest updates to help your business thrive.",
+          "success"
+        );
+        reset();
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -41,8 +56,9 @@ const Newsletter: React.FC = () => {
         <h1 className="text-xl">Join Our Weekly Newsletter</h1>
         <p className="text-sm">
           Stay ahead with the latest updates, new features, and expert tips on
-          growing your business effortlessly. <br/>Get insights on how we’re making
-          business management smarter; straight to your inbox!
+          growing your business effortlessly. <br />
+          Get insights on how we’re making business management smarter; straight
+          to your inbox!
           {/* <br />
           we help to improve your business */}
         </p>
