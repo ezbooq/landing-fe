@@ -4,7 +4,18 @@ import HomeCleaning from "../public/carcleaning.jpg";
 import PetGroomers from "../public/petgrooming.jpg";
 import DogWalker from "../public/petwalking.jpeg";
 import CarpetCleaning from "../public/Carpet cleaning.jpg";
-
+import Accountant from "../public/accountent.jpg";
+import PoolCleaning from "../public/pool cleaning.jpg";
+import LawnCare from "../public/Lawn care.jpg";
+import MovingBusiness from "../public/Moving Business.jpeg";
+import NailSaloon from "../public/Nail-Salon.webp";
+import Spa from "../public/Spa.jpg";
+import Massage from "../public/massage.jpg";	
+import GutterCleaning from "../public/gutter cleaning.jpg";
+import Lawyers from "../public/lawyers.jpeg";
+import Tutors from "../public/tutors.jpg";
+import Consultation from "../public/consultation.jpg";
+import Coaches from "../public/couches.jpg";
 
 export const Industries = [
   {
@@ -119,7 +130,7 @@ export const Industries = [
     id: "7",
     title: "Pool Cleaning",
     slug: "pool-cleanig",
-    image: [CarpetCleaning],
+    image: [PoolCleaning],
     subTitle1: "Simplified Service Scheduling",
     description1:
       "EzBooq redefines pool cleaning with a simple booking system, route optimization, and precise chemical tracking. Keep pools pristine while our platform manages your schedule efficiently, reducing delays.",
@@ -137,7 +148,7 @@ export const Industries = [
     id: "8",
     title: "Lawn Care",
     slug: "lawn-care",
-    image: [CarpetCleaning],
+    image: [LawnCare],
     subTitle1: "Streamlined Scheduling & Billing",
     description1:
       "EzBooq elevates lawn care services with an intuitive scheduling system, automated billing, and efficient route planning. Focus on cr eating lush landscapes while our platform handles administrative tasks smoothly.",
@@ -155,7 +166,7 @@ export const Industries = [
     id: "9",
     title: "Moving Business",
     slug: "moving-business",
-    image: [CarpetCleaning],
+    image: [MovingBusiness],
     subTitle1: "Seamless Booking & Coordination",
     description1:
       "EzBooq streamlines your moving business with automated scheduling, digital estimates, and real-time driver tracking. Deliver prompt, professional relocations while our platform minimizes delays and simplifies logistics.",
@@ -173,7 +184,7 @@ export const Industries = [
     id: "10",
     title: "Nail saloon",
     slug: "nail-saloon",
-    image: [CarpetCleaning],
+    image: [NailSaloon],
     subTitle1: "Effortless Appointment Management",
     description1:
       "EzBooq revitalizes nail salon operations with seamless booking, automated reminders, and integrated payment options. Create a luxurious experience while our platform streamlines your daily scheduling and service management.",
@@ -191,7 +202,7 @@ export const Industries = [
     id: "11",
     title: "Spa",
     slug: "spa",
-    image: [CarpetCleaning],
+    image: [Spa],
     subTitle1: "Elegant Scheduling & Booking",
     description1:
       "We transform spa management with an elegant booking system, automated reminders, and secure client records. Focus on delivering relaxing, personalized treatments while our platform handles the administrative details.",
@@ -209,7 +220,7 @@ export const Industries = [
     id: "12",
     title: "Massage",
     slug: "massage",
-    image: [CarpetCleaning],
+    image: [Massage],
     subTitle1: "Streamlined Session Scheduling",
     description1:
       "EzBooq empowers massage therapy practices with a streamlined scheduling system, automated reminders, and secure payment processing. Focus on delivering therapeutic treatments while our platform handles appointments efficiently.",
@@ -227,7 +238,7 @@ export const Industries = [
     id: "13",
     title: "Gutter Cleaning",
     slug: "gutter-cleaning",
-    image: [CarpetCleaning],
+    image: [GutterCleaning],
     subTitle1: "Efficient Booking & Coordination",
     description1:
       "EzBooq revolutionizes gutter cleaning services with an efficient scheduling system, automated reminders, and integrated payment solutions. Focus on delivering timely,professional cleaning while our platform reduces administrative hassle.",
@@ -245,7 +256,7 @@ export const Industries = [
     id: "14",
     title: "Lawyers",
     slug: "lawyers",
-    image: [CarpetCleaning],
+    image: [Lawyers],
     subTitle1: "Professional Appointment Management",
     description1:
       "EzBooq empowers legal practices with an intuitive scheduling system, automated reminders, and secure client management. Focus on case preparation and consultation while our platform handles routine administrative tasks efficiently.",
@@ -263,7 +274,7 @@ export const Industries = [
     id: "15",
     title: "Accountant",
     slug: "accountant",
-    image: [CarpetCleaning],
+    image: [Accountant],
     subTitle1: "Streamlined Scheduling & Invoicing",
     description1:
       "EzBooq simplifies accounting services with automated appointment scheduling, digital invoicing, and secure data management. Focus on delivering expert financial advice while our platform handles routine administrative tasks seamlessly.",
@@ -281,7 +292,7 @@ export const Industries = [
     id: "16",
     title: "All Tutors",
     slug: "all-tutors",
-    image: [CarpetCleaning],
+    image: [Tutors],
     subTitle1: "Effortless Lesson Scheduling",
     description1:
       "EzBooq empowers tutors with an integrated scheduling system, automated reminders, and secure payment options. Focus on delivering quality education while our platform handles lesson bookings efficiently.",
@@ -299,7 +310,7 @@ export const Industries = [
     id: "17",
     title: "All Consultation",
     slug: "all-consultation",
-    image: [CarpetCleaning],
+    image: [Consultation],
     subTitle1: "Simplified Appointment Booking",
     description1:
       "We enhance consultation services with streamlined scheduling, secure virtual meeting integrations, and automated follow-up reminders. Focus on delivering expert advice while our platform simplifies client interactions and meeting logistics.",
@@ -317,7 +328,7 @@ export const Industries = [
     id: "18",
     title: "All coaches",
     slug: "all-coaches",
-    image: [CarpetCleaning],
+    image: [Coaches],
     subTitle1: "Integrated Session Scheduling",
     description1:
       "EzBooq empowers coaches with an intuitive scheduling system, automated reminders, and secure payment integration. Focus on providing personalized guidance while our platform streamlines session bookings and client communications effortlessly.",
