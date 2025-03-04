@@ -13,10 +13,10 @@ const ContactDetails = () => {
           to expert assistance is available round-the-clock.
         </p>
         <a
-          href="mailto:hello@ezbooq.com"
+          href="mailto:ezbooq@gmail.com"
           className="underline underline-offset-2"
         >
-          hello@ezbooq.com
+          ezbooq@gmail.com
         </a>
       </div>
       <div className="flex flex-col gap-4 items-center sm:items-start mb-3">
@@ -27,7 +27,7 @@ const ContactDetails = () => {
           community commitment! Ready to support your business needs.
         </p>
         <a className="underline underline-offset-2">
-        123 Sample St, Sydney NSW 2000 AU
+        New York, USA; Melbourine, AU; Colombo, SL
         </a>
       </div>
       <div className="flex flex-col gap-4 items-center sm:items-start mb-3">
@@ -37,8 +37,8 @@ const ContactDetails = () => {
           Call us for instant, expert support, personalized service and prompt
           solutions at your fingertips.
         </p>
-        <a href="tel:+1(555) 000-0000" className="underline underline-offset-2">
-          +1(555) 000-0000
+        <a href="tel:+61 485 982 386" className="underline underline-offset-2">
+        + 61 485 982 386
         </a>
       </div>
     </div>

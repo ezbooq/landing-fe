@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
     <footer className="bg-white p-5 py-10">
       <div className="max-w-7xl mx-auto">
         <Newsletter />
-        <div className="flex flex-col sm:flex-row justify-between gap-6 border-t border-gray-300 pt-6">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-6 border-t border-gray-300 pt-6">
           <div className="">
             <Image src="/logo.png" alt="Logo" width={120} height={50} />
             <h4 className="font-bold mt-3">Address</h4>
@@ -78,8 +78,8 @@ const Footer: React.FC = () => {
             </p>
             <h2 className="font-bold mt-3">Contact</h2>
             <p className="font-thin text-sm">
-              (+56) 0565 48949 <br />
-              support@ezbooq.com <br />
+            + 61 485 982 386 <br />
+            ezbooq@gmail.com <br />
             </p>
             <div className="flex space-x-4 mt-4">
               {socialIcons.map((social, index) => (
@@ -93,6 +93,7 @@ const Footer: React.FC = () => {
               ))}
             </div>
           </div>
+          {/* <p className="text-2xl font-medium">Connecting businesses with innovation.</p> */}
           <div className="flex justify-between gap-4 sm:gap-10">
             {columns.map((column) => (
               <FooterColumn
@@ -105,7 +106,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="border-t border-gray-300 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-black flex flex-col sm:flex-row items-center justify-center mx-auto gap-5">
-            <p>&copy; {date.getFullYear()} EZBooq. All rights reserved. </p>
+            <p>&copy; 2024 - {date.getFullYear()} EZBooq. All rights reserved. </p>
             <div className="flex gap-4">
               <NavLink
                 href="/industries"
@@ -120,7 +121,7 @@ const Footer: React.FC = () => {
                 Contact Us
               </NavLink>
               <NavLink href="/sign-up" className="underline underline-offset-2">
-                Signup
+                Sign Up
               </NavLink>
             </div>
           </div>
