@@ -2,6 +2,7 @@
 
 type SelectFieldProps = {
   label?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   register: any;
   name: string;
   placeholder?: string;

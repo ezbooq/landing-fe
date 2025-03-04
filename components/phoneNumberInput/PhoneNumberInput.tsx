@@ -9,6 +9,7 @@ type PhoneNumberInputProps = {
   setSelectedCountry: React.Dispatch<React.SetStateAction<Country>>;
   countries: Country[];
   error?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   register: any;
   name: string;
   required?: boolean;

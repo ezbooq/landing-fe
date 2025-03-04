@@ -4,6 +4,7 @@ import { useEffect, useState, useRef, useMemo } from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import DottedMap from "dotted-map";
+import Image from "next/image";
 
 const WorldMap = dynamic(() => Promise.resolve(WorldMapComponent), {
   ssr: false,
@@ -68,9 +69,10 @@ function WorldMapComponent({
   return (
     <div className="w-full aspect-[2/1] bg-white rounded-lg relative font-sans">
       {useStaticImage ? (
-        <img
+        <Image
           src="/static/world-map.png"
-          className="h-full w-full absolute inset-0 pointer-events-none select-none"
+          layout="fill"
+          className="pointer-events-none select-none"
           alt="Dotted Map"
         />
       ) : (
