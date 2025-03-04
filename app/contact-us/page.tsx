@@ -2,6 +2,7 @@ import ContactDetails from "@/components/section/contact/contactForm/ContactDeta
 import ContactForm from "@/components/section/contact/contactForm/ContactForm";
 import FAQ from "@/components/section/contact/FAQ/FAQ";
 import Image from "next/image";
+import Dashboard from "../../public/Dashboard.svg";
 
 export default function ContactUs() {
   return (
@@ -18,7 +19,7 @@ export default function ContactUs() {
             <ContactForm />
             <div className="hidden md:inline col-span-3 z-10">
               <Image
-                src="/Dashboard.svg"
+                src={Dashboard}
                 alt="dashboard"
                 className="w-full rounded-lg shadow-lg"
                 height={800}

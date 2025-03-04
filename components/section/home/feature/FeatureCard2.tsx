@@ -13,7 +13,7 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col justify-between gap-3 ${className} hover:bg-[#F5FDF3] border border-gray-200 hover:border-primary px-4 py-4 rounded-lg min-h-[15rem]`}
+      className={`flex flex-col justify-between gap-3 ${className} hover:bg-[#F5FDF3] border border-gray-200 hover:border-primary px-4 py-4 rounded-lg min-h-[18rem]`}
     >
       <div className="w-12 h-12 flex justify-center items-center rounded-md bg-secondary text-2xl text-[#6143E9]">
         {icon}

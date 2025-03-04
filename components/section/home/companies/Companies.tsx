@@ -1,4 +1,9 @@
 import Image from "next/image";
+import Google from "../../../../public/google.svg";
+import Stripe from "../../../../public/stripe.svg";
+import Amezon from "../../../../public/amezon.svg";
+import Unlayer from "../../../../public/unlayer.svg";
+import TWilio from "../../../../public/twilio.svg";
 
 const Companies: React.FC = () => {
   return (
@@ -10,18 +15,18 @@ const Companies: React.FC = () => {
           <div className="flex w-max animate-infinite-scroll gap-20">
             {/* Logos are duplicated for smooth looping */}
             <div className="flex justify-center items-center gap-20">
-              <Image src="/google.svg" alt="google" width={120} height={50} />
-              <Image src="/stripe.svg" alt="stripe" width={120} height={50} />
-              <Image src="/amezon.svg" alt="amazon" width={120} height={50} />
-              <Image src="/unlayer.svg" alt="unlayer" width={120} height={50} />
-              <Image src="/twilio.svg" alt="twilio" width={120} height={50} />
+              <Image src={Google} alt="google" width={120} height={50} />
+              <Image src={Stripe} alt="stripe" width={120} height={50} />
+              <Image src={Amezon} alt="amazon" width={120} height={50} />
+              <Image src={Unlayer} alt="unlayer" width={120} height={50} />
+              <Image src={TWilio} alt="twilio" width={120} height={50} />
             </div>
             <div className="flex justify-center items-center gap-20">
-              <Image src="/google.svg" alt="google" width={120} height={50} />
-              <Image src="/stripe.svg" alt="stripe" width={120} height={50} />
-              <Image src="/amezon.svg" alt="amazon" width={120} height={50} />
-              <Image src="/unlayer.svg" alt="unlayer" width={120} height={50} />
-              <Image src="/twilio.svg" alt="twilio" width={120} height={50} />
+              <Image src={Google} alt="google" width={120} height={50} />
+              <Image src={Stripe} alt="stripe" width={120} height={50} />
+              <Image src={Amezon} alt="amazon" width={120} height={50} />
+              <Image src={Unlayer} alt="unlayer" width={120} height={50} />
+              <Image src={TWilio} alt="twilio" width={120} height={50} />
             </div>
           </div>
         </div>

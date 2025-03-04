@@ -5,6 +5,7 @@ import Button from "@/components/button/Button";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import PopUpModal from "@/components/popUpModal/PopUpModal";
+import Dashboard from "../../../../public/Dashboard.svg";
 
 const Hero: React.FC = () => {
   const router = useRouter();
@@ -49,18 +50,18 @@ const Hero: React.FC = () => {
               router.push("/register");
             }}
           >
-            Get started
+            Get Started
           </Button>
           {/* </Link> */}
           <Button variant="outline" onClick={() => handleOpenModal()}>
-            Learn more
+            Learn More
           </Button>
         </div>
 
         {/* Image section with NO bottom rounded corners or shadow */}
         <div className="relative mt-8 flex items-start justify-center overflow-hidden max-w-4xl mx-auto shadow-none rounded-none">
           <Image
-            src="/Dashboard 1.svg"
+            src={Dashboard}
             alt="dashboard"
             className="w-full rounded-none shadow-none"
             height={400}

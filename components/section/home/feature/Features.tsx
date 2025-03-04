@@ -13,17 +13,15 @@ const Features: React.FC = () => {
       id: "01",
       title: "Inventory for SME business",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
-      image: "/Dashboard.svg",
+        "A streamlined inventory system designed for small and medium enterprises, ensuring real-time stock tracking, automated updates, and seamless integration with sales channels.",
       options: ["Smart inventory", "Smart tracking", "Smart invoices"],
       className: "bg-[#FFFBF2]",
     },
     {
       id: "02",
-      title: "Simplified booking system",
+      title: "Simplified Booking System",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
-      image: "/Personimg1.jpg",
+        "An intuitive booking platform that enhances customer experience, automates scheduling, and reduces manual work for businesses across various industries.",
       options: [
         "Appointment management",
         "Create bookable landing page",
@@ -35,21 +33,19 @@ const Features: React.FC = () => {
       id: "03",
       title: "Campaign Management",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
-      image: "/Personimg2.jpg",
+        "A centralized tool for planning, executing, and analyzing marketing campaigns with AI-driven insights to maximize engagement and conversions.",
       options: [
         "SMS campaign",
-        "E-mail Campaign",
-        "create, launch your own messages to leads",
+        "E-mail campaign",
+        "Create, launch your own messages to leads",
       ],
       className: "bg-[#F0EEFC]",
     },
     {
       id: "04",
-      title: "Sales fast AI Chat bot",
+      title: "Sales Fast AI Chatbot",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
-      image: "/Personimg2.jpg",
+        "An intelligent chatbot that accelerates sales by automating inquiries, providing instant responses, and personalizing customer interactions to drive conversions.",
       options: [
         "Automated sales process",
         "AI contents",
@@ -62,30 +58,30 @@ const Features: React.FC = () => {
   const features2 = [
     {
       id: "01",
-      title: "Inventory for SME business",
+      title: "Smart Inventory",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
+        "Efficiently track, manage, and optimize inventory with automated stock updates, low-stock alerts, and seamless integration for SMEs.",
       icon: <LiaWarehouseSolid />,
     },
     {
       id: "02",
-      title: "Simplified booking system",
+      title: "Seamless Customizable Booking Page",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
+        "Create a personalized booking experience with a user-friendly, fully customizable page that adapts to your brand and business needs.",
       icon: <MdOutlineDashboardCustomize />,
     },
     {
       id: "03",
-      title: "Campaign Management",
+      title: "Realtime Campaign Setup With SMS & E-mail For Marketing",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
+        "Launch and manage marketing campaigns instantly with automated SMS and email outreach to engage customers effectively.",
       icon: <LuBox />,
     },
     {
       id: "04",
-      title: "Sales fast AI Chat bot",
+      title: "AI & Data-Driven Growth With More Add-Ons",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, justo in tincidunt.",
+        "Enhance business performance with AI-powered insights, automation, and scalable add-ons tailored to your unique needs.",
       icon: <PiStarFourBold />,
     },
   ];

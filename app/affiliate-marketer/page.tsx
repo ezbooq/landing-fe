@@ -59,7 +59,7 @@ export default function AffiliateMarketer() {
                   router.push("/affiliate-marketer/partner-sign-up");
                 }}
               >
-                Apply now
+                Apply Now
               </Button>
             </div>
           </div>

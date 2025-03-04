@@ -17,7 +17,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col justify-between gap-3 ${className} border border-gray-200 px-4 py-8 rounded-lg min-h-[28rem]`}
+      className={`flex flex-col justify-between gap-3 ${className} border border-gray-200 px-4 py-8 rounded-lg min-h-[29rem]`}
     >
       <div className="text-sm font-semibold px-5 py-1 w-9 h-9 flex justify-center items-center rounded-md bg-white">
         {id}

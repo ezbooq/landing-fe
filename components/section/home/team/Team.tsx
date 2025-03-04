@@ -4,6 +4,10 @@ import { useState } from "react";
 import Button from "../../../button/Button";
 import TeamCard from "./TeamCard";
 import PopUpModal from "@/components/popUpModal/PopUpModal";
+import Person1 from "../../../../public/Personimg1.jpg";
+import Person2 from "../../../../public/Personimg2.jpg";
+import Person3 from "../../../../public/Personimg3.jpg";
+import Person4 from "../../../../public/Personimg3.jpg";
 
 const Team: React.FC = () => {
   const teamMembers = [
@@ -11,28 +15,28 @@ const Team: React.FC = () => {
       title: "Owners",
       description:
         "Gain comprehensive insights and control over your operations with real-time analytics and automated processes, enabling strategic decision-making and efficient management.",
-      imageSrc: "/Personimg1.jpg",
+      imageSrc: Person1,
       altText: "Owner Image",
     },
     {
       title: "Employees",
       description:
         "Empower your team with intuitive tools that streamline tasks, foster collaboration within the team while boosting productivity, ensuring they can focus on what matters most.",
-      imageSrc: "/Personimg2.jpg",
+      imageSrc: Person2,
       altText: "Employee Image",
     },
     {
       title: "Managers",
       description:
         "Simplify procurement and supply chain interactions through a unified interface that enhances communication, tracking, and relationship management.",
-      imageSrc: "/Personimg3.jpg",
+      imageSrc: Person3,
       altText: "Manager Image",
     },
     {
       title: "Customers",
       description:
         "Deliver personalized experiences and responsive support with AI-enhanced customer relationship management, building trust and driving engagement.",
-      imageSrc: "/Personimg4.jpg",
+      imageSrc: Person4,	
       altText: "Customer Image",
     },
   ];

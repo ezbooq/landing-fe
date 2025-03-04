@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type TeamCardProps = {
   title: string;
   description: string;
-  imageSrc: string;
+  imageSrc: StaticImageData;
   altText: string;
 };
 
