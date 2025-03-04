@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
     <footer className="bg-white p-5 py-10">
       <div className="max-w-7xl mx-auto">
         <Newsletter />
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-6 border-t border-gray-300 pt-6">
+        <div className="flex flex-col sm:flex-row justify-start  sm:justify-between sm:items-center gap-6 border-t border-gray-300 pt-6">
           <div className="">
             <Image src={Logo} alt="Logo" width={120} height={50} />
             <h4 className="font-bold mt-3">Address</h4>

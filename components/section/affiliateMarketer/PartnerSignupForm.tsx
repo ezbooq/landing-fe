@@ -20,7 +20,7 @@ const SelectField = dynamic(
 
 export default function PartnerSignupForm() {
   const [selectedCountryCode, setSelectedCountryCode] = useState<Country>(
-    countryCodes[126]
+    countryCodes[227]
   );
   const [loading, setLoading] = useState(false);
   const [serverError, setServerError] = useState("");

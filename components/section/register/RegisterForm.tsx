@@ -46,7 +46,7 @@ const IndustryList = [
 
 export default function RegisterForm() {
   const [selectedCountryCode, setSelectedCountryCode] = useState<Country>(
-    countryCodes[126]
+    countryCodes[227]
   );
   const [loading, setLoading] = useState(false);
   const [serverError, setServerError] = useState("");
