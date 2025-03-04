@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ezbooq.com
+
+# Sitemaps
+Sitemap: https://ezbooq.com/sitemap.xml
