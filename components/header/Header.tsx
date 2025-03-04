@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Button from "@/components/button/Button";
 import NavMenu from "@/components/navMenu/NavMenu";
-
+import Logo from "../../public/Logo.png";
 import { RxTextAlignJustify } from "react-icons/rx";
 import { useState } from "react";
 import NavLink from "../navLink/NavLink";
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <Banner />
       <div className="flex justify-between items-center p-5 max-w-7xl mx-auto">
         <NavLink href="/" onClick={() => setIsDropdownOpen(false)}>
-          <Image src="/logo.png" alt="Logo" width={120} height={50} />
+          <Image src={Logo} alt="Logo" width={120} height={50} />
         </NavLink>
 
         <NavMenu
@@ -62,11 +62,20 @@ const Header: React.FC = () => {
           </h1>
           <div className="max-w-7xl mx-auto px-4 pt-4 grid grid-cols-3 gap-4">
             {IndustryData.map((industry) => (
-              <NavLink href={`/industries/${industry.slug}`} key={industry.id} onClick={() => setIsDropdownOpen(false)}>
+              <NavLink
+                href={`/industries/${industry.slug}`}
+                key={industry.id}
+                onClick={() => setIsDropdownOpen(false)}
+              >
                 {industry.title}
               </NavLink>
             ))}
-            <NavLink href={`/industries`} key={"all"} className="text-primary" onClick={() => setIsDropdownOpen(false)}>
+            <NavLink
+              href={`/industries`}
+              key={"all"}
+              className="text-primary"
+              onClick={() => setIsDropdownOpen(false)}
+            >
               View more...
             </NavLink>
           </div>

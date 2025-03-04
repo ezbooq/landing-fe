@@ -11,7 +11,7 @@ import FooterColumn from "./FooterColumn";
 import Image from "next/image";
 import NavLink from "../navLink/NavLink";
 import Newsletter from "../newsletter/Newsletter";
-
+import Logo from "../../public/Logo.png";
 const Footer: React.FC = () => {
   const columns = [
     {
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
         <Newsletter />
         <div className="flex flex-col sm:flex-row justify-between items-center gap-6 border-t border-gray-300 pt-6">
           <div className="">
-            <Image src="/logo.png" alt="Logo" width={120} height={50} />
+            <Image src={Logo} alt="Logo" width={120} height={50} />
             <h4 className="font-bold mt-3">Address</h4>
             <p className="font-extralight text-sm">
               New York, USA <br />
@@ -78,8 +78,8 @@ const Footer: React.FC = () => {
             </p>
             <h2 className="font-bold mt-3">Contact</h2>
             <p className="font-thin text-sm">
-            + 61 485 982 386 <br />
-            ezbooq@gmail.com <br />
+              + 61 485 982 386 <br />
+              ezbooq@gmail.com <br />
             </p>
             <div className="flex space-x-4 mt-4">
               {socialIcons.map((social, index) => (
@@ -106,7 +106,9 @@ const Footer: React.FC = () => {
         </div>
         <div className="border-t border-gray-300 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-black flex flex-col sm:flex-row items-center justify-center mx-auto gap-5">
-            <p>&copy; 2024 - {date.getFullYear()} EZBooq. All rights reserved. </p>
+            <p>
+              &copy; 2024 - {date.getFullYear()} EZBooq. All rights reserved.{" "}
+            </p>
             <div className="flex gap-4">
               <NavLink
                 href="/industries"
