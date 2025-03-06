@@ -29,7 +29,7 @@ const InputField: React.FC<InputFieldProps> = ({
   return (
     <div className={`flex flex-col w-full ${className}`}>
       {label && (
-        <label htmlFor={name} className="mb-1 text-sm font-medium text-black">
+        <label htmlFor={name} className="mb-1 text-sm font-medium text-[black]">
           {label}{required && <span className="text-red-500">*</span>}
         </label>
       )}
@@ -42,7 +42,7 @@ const InputField: React.FC<InputFieldProps> = ({
           value={value}
           disabled={disabled}
           className={`px-4 py-2 border rounded-lg focus:outline-none focus:border-none focus:ring-2 focus:ring-primary ${
-            errorMessage ? "border-red-500 " : "border-black"
+            errorMessage ? "border-red-500 " : "border-[#2E2E2E]"
           }`}
           rows={6} // Default rows for textarea
         />
@@ -56,7 +56,7 @@ const InputField: React.FC<InputFieldProps> = ({
           value={value}
           disabled={disabled}
           className={`px-4 py-2 border rounded-lg focus:outline-none focus:border-none focus:ring-2 focus:ring-primary ${
-            errorMessage ? "border-red-500 " : "border-black"
+            errorMessage ? "border-red-500 " : "border-[#2E2E2E]"
           }`}
         />
       )}

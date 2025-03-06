@@ -27,7 +27,7 @@ const ContactDetails = () => {
           community commitment! Ready to support your business needs.
         </p>
         <a className="underline underline-offset-2">
-        New York, USA; Melbourine, AU; Colombo, SL
+          New York, USA; Melbourine, AU; Colombo, SL
         </a>
       </div>
       <div className="flex flex-col gap-4 items-center sm:items-start mb-3">
@@ -38,7 +38,7 @@ const ContactDetails = () => {
           solutions at your fingertips.
         </p>
         <a href="tel:+61 485 982 386" className="underline underline-offset-2">
-        + 61 485 982 386
+          (203) 267-9397
         </a>
       </div>
     </div>
