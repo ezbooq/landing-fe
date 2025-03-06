@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 import { IoMdClose } from "react-icons/io";
 import NavLink from "../navLink/NavLink";
@@ -5,6 +7,7 @@ import { Industries as IndustryData } from "@/data/data";
 import { useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import Button from "../button/Button";
+import { useRouter } from "next/navigation";
 
 type MobileNavMenuProps = {
   setIsMobileNavOpen: (isMobileNavOpen: boolean) => void;
@@ -14,13 +17,15 @@ const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
   setIsMobileNavOpen,
 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const router = useRouter();
+
   return (
     <motion.div
       initial={{ x: "100%" }}
       animate={{ x: 0 }}
       exit={{ x: "100%" }}
       transition={{ type: "tween", duration: 0.3 }}
-      className="fixed sm:hidden inset-0 w-full h-full bg-white z-50 flex flex-col p-6"
+      className="fixed md:hidden inset-0 w-full h-full bg-white z-50 flex flex-col p-6"
     >
       {/* Close Button */}
       <button
@@ -89,21 +94,22 @@ const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
           What&apos;s New
         </NavLink> */}
 
-        <Button
+        {/* <Button
           variant="solid"
           onClick={() => {
             setIsMobileNavOpen(false);
           }}
         >
           Get started
-        </Button>
+        </Button> */}
         <Button
-          variant="outline"
+          variant="solid"
           onClick={() => {
             setIsMobileNavOpen(false);
+            router.push("/register");
           }}
         >
-          Sign up
+          Register Now
         </Button>
       </nav>
     </motion.div>

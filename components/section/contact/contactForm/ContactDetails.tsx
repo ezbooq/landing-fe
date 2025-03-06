@@ -37,7 +37,7 @@ const ContactDetails = () => {
           Call us for instant, expert support, personalized service and prompt
           solutions at your fingertips.
         </p>
-        <a href="tel:+61 485 982 386" className="underline underline-offset-2">
+        <a href="tel:(203) 267-9397" className="underline underline-offset-2">
           (203) 267-9397
         </a>
       </div>

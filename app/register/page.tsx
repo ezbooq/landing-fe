@@ -7,7 +7,7 @@ export default function Register() {
     <main className="grid grid-cols-6 items-center max-w-7xl mx-auto px-4 py-8 gap-10">
       <RegisterForm /> {/* Client Component */}
       <div
-        className="hidden lg:inline col-span-3 h-screen bg-cover bg-center bg-no-repeat relative"
+        className="hidden lg:inline col-span-3 h-full bg-cover bg-center bg-no-repeat relative"
         style={{
           backgroundImage: "url('/login_bg2.png')",
         }}

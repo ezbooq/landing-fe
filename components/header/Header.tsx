@@ -42,7 +42,7 @@ const Header: React.FC = () => {
 
         <RxTextAlignJustify
           className="inline md:hidden text-primary cursor-pointer"
-          size={25}
+          size={28}
           onClick={() => setIsMobileNavOpen(true)}
         />
       </div>
