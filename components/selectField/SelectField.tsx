@@ -37,7 +37,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
         id={name}
         disabled={disabled}
         className={`pl-3 pr-5 py-2 border rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary ${
-          errorMessage ? "border-red-500 " : "border-[#2E2E2E]"
+          errorMessage ? "border-red-500 " : "border-gray-500"
         } appearance-none px-4 py-2`}
       >
         {placeholder ? (
