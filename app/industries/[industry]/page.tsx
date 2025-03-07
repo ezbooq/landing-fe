@@ -29,18 +29,18 @@ const IndustryPage = () => {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-4 p-4 mt-8">
         <div className="flex flex-col gap-4 text-black">
-          <h1 className="text-2xl sm:text-4xl">
+          <h1 className="text-2xl sm:text-4xl text-center md:text-start">
             {Industry.subTitle1}
           </h1>
-          <p className="text-sm sm:text-base text-black">
+          <p className="text-sm sm:text-base text-center md:text-start text-black">
             {Industry.description1}
           </p>
-          <div className="flex gap-4">
+          <div className="flex justify-center md:justify-start gap-4 mb-3">
             <Button
               onClick={() => {
                 router.push("/register");
               }}
-              className="hidden md:inline"
+              className=""
             >
               Sign Up
             </Button>

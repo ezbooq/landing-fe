@@ -33,7 +33,7 @@ const features = [
   {
     title: "All-in-One Business Hub",
     description:
-      "From scheduling to payments and marketing, EzBooq centralizes everything in one smart platform, making business management simpler than ever.",
+      "From scheduling to payments and marketing, Ezbooq centralizes everything in one smart platform, making business management simpler than ever.",
   },
 ];
 
@@ -49,8 +49,8 @@ export default function AffiliateMarketer() {
               Apply To Join The Ezbooq Affiliate Program
             </h1>
             <p className="text-sm sm:text-base mb-4 max-w-3xl mx-auto">
-              EzBooq is tranforming booking, cutomer & staff management for
-              service providers. Join us in revolutionizing the industry
+              Ezbooq is tranforming booking, customer & staff management for
+              service providers. Join us in revolutionizing the industry.
             </p>
             <div className="flex justify-center">
               <Button
@@ -68,10 +68,10 @@ export default function AffiliateMarketer() {
       <div className="max-w-7xl mx-auto py-10 p-5">
         <div className="text-center mb-8">
           <h1 className="text-2xl sm:text-4xl font-medium mb-4 max-w-2xl mx-auto">
-            Who Benefits from EzBooq?
+            Who Benefits from Ezbooq?
           </h1>
           <p className="text-sm sm:text-base mb-4 max-w-3xl mx-auto">
-            EzBooq is a portal designed for ambitious business owners, dynamic
+            Ezbooq is a portal designed for ambitious business owners, dynamic
             teams, reliable vendors, and valued customers ; bringing everyone
             together on one intelligent platform to simplify operations, enhance
             collaboration, and drive growth effortlessly.
