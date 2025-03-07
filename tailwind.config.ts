@@ -1,3 +1,4 @@
+import { animate } from "motion/react";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -8,12 +9,20 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        infinite_scroll: {
+          "100%": { transform: "translate(calc(-50% - 2.5rem))" },
+        },
+      },
+      animation: {
+        infinite_scroll: "infinite_scroll 20s linear infinite",
+      },
       colors: {
         primary: "#22AD01",
         secondary: "#FAFAFA",
         black: "#21272A",
         yellow: "#FFAC33",
-        lightgreen: "#84EC6B"
+        lightgreen: "#84EC6B",
       },
     },
   },
