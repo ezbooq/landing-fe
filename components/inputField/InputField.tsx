@@ -42,7 +42,7 @@ const InputField: React.FC<InputFieldProps> = ({
           value={value}
           disabled={disabled}
           className={`px-4 py-2 border rounded-lg focus:outline-none focus:border-none focus:ring-2 focus:ring-primary ${
-            errorMessage ? "border-red-500 " : "border-[#2E2E2E]"
+            errorMessage ? "border-red-500 " : "border-gray-500"
           }`}
           rows={6} // Default rows for textarea
         />
@@ -56,7 +56,7 @@ const InputField: React.FC<InputFieldProps> = ({
           value={value}
           disabled={disabled}
           className={`px-4 py-2 border rounded-lg focus:outline-none focus:border-none focus:ring-2 focus:ring-primary ${
-            errorMessage ? "border-red-500 " : "border-[#2E2E2E]"
+            errorMessage ? "border-red-500 " : "border-gray-500"
           }`}
         />
       )}

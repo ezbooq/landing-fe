@@ -78,7 +78,8 @@ const Footer: React.FC = () => {
             </p>
             <h2 className="font-bold mt-3">Contact</h2>
             <p className="font-thin text-sm">
-              (203) 267-9397 <br />
+              USA - +1 (203) 267-9397 <br />
+              AUS - +61 485 982 386 <br />
               ezbooq@gmail.com <br />
             </p>
             <div className="flex space-x-4 mt-4">
@@ -107,7 +108,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-300 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-black flex flex-col sm:flex-row items-center justify-center mx-auto gap-5">
             <p>
-              &copy; 2024 - {date.getFullYear()} EZBooq. All rights reserved.{" "}
+              &copy; 2024 - {date.getFullYear()} Ezbooq. All rights reserved.{" "}
             </p>
             <div className="flex gap-4">
               <NavLink
@@ -122,7 +123,7 @@ const Footer: React.FC = () => {
               >
                 Contact Us
               </NavLink>
-              <NavLink href="/sign-up" className="underline underline-offset-2">
+              <NavLink href="/register" className="underline underline-offset-2">
                 Sign Up
               </NavLink>
             </div>

@@ -41,7 +41,7 @@ const PhoneNumberInput: React.FC<PhoneNumberInputProps> = ({
       <div className="flex items-start space-x-4">
         <div className="relative flex-shrink-0 w-32">
           <div
-            className="flex items-center justify-between space-x-2 py-2.5 cursor-pointer ring-typography-secondary/30 border border-black rounded-[8px] ring-1 px-2 text-sm focus:outline-none focus:border-none focus:ring-2 focus:ring-primary  "
+            className="flex items-center justify-between space-x-2 py-2.5 cursor-pointer ring-typography-secondary/30 border border-gray-500 rounded-[8px] ring-1 px-2 text-sm focus:outline-none focus:border-none focus:ring-2 focus:ring-primary  "
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           >
             <div className="flex items-center space-x-2 ">
@@ -62,7 +62,7 @@ const PhoneNumberInput: React.FC<PhoneNumberInputProps> = ({
             />
           </div>
           {isDropdownOpen && (
-            <div className="absolute left-0 right-0 mt-1 bg-secondary rounded z-10 overflow-auto h-36 shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="absolute left-0 right-0 mt-1 bg-secondary rounded z-10 overflow-auto h-36 shadow-lg ring-1 ring-primary ring-opacity-5">
               {countries.map((country) => (
                 <div
                   key={country.code}
@@ -91,7 +91,7 @@ const PhoneNumberInput: React.FC<PhoneNumberInputProps> = ({
             id={name}
             placeholder="Enter phone number"
             className={`px-4 py-2 border rounded-lg focus:outline-none focus:border-none focus:ring-2 focus:ring-primary w-full ${
-              error ? "border-red-500 " : "border-black"
+              error ? "border-red-500 " : "border-gray-500"
             }`}
           />
           {error && (

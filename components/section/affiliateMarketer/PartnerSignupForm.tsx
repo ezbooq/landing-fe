@@ -108,7 +108,7 @@ export default function PartnerSignupForm() {
           Partner Sign Up
         </h1>
         <p className="text-sm sm:text-base mb-4">
-          EzBooq is transforming booking, customer & staff management for
+          Ezbooq is transforming booking, customer & staff management for
           service providers. Join us in revolutionizing the industry.
         </p>
         <div className="space-y-4">

@@ -62,7 +62,7 @@ const Newsletter: React.FC = () => {
   return (
     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-10 mb-4">
       <div>
-        <h1 className="text-xl">Join Our Weekly Newsletter</h1>
+        <h1 className="text-xl font-medium">Join Our Weekly Newsletter</h1>
         <p className="text-sm">
           Stay ahead with the latest updates, new features, and expert tips on
           growing your business effortlessly. <br />
