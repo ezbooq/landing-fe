@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
       >
         <iframe
           className="w-full h-full"
-          src="https://www.youtube.com/embed/aL27fX5kv9U"
+          src="https://www.youtube.com/embed/8ZOZ9OEW_Yg?si=1FXWIkZVzjKJBTU"
           title="Introduction To WiseGPT"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
