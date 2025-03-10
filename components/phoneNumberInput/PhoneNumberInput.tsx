@@ -62,7 +62,7 @@ const PhoneNumberInput: React.FC<PhoneNumberInputProps> = ({
             />
           </div>
           {isDropdownOpen && (
-            <div className="absolute left-0 right-0 mt-1 bg-secondary rounded z-10 overflow-auto h-36 shadow-lg ring-1 ring-primary ring-opacity-5">
+            <div className="absolute left-0 right-0 mt-1 bg-secondary rounded z-10 overflow-auto h-48 shadow-lg ring-1 ring-primary ring-opacity-5">
               {countries.map((country) => (
                 <div
                   key={country.code}

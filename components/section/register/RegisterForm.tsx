@@ -160,6 +160,18 @@ export default function RegisterForm() {
             />
           </div>
           <div className="col-span-2">
+            <PhoneNumberInput
+              label="Mobile Number"
+              register={register}
+              name="phoneNumber"
+              selectedCountry={selectedCountryCode}
+              setSelectedCountry={setSelectedCountryCode}
+              countries={countryCodes}
+              error={errors.phoneNumber?.message}
+              required={true}
+            />
+          </div>
+          <div className="col-span-2">
             <InputField
               register={register}
               label="Company Name"
@@ -197,18 +209,7 @@ export default function RegisterForm() {
               required={true}
             />
           </div>
-          <div className="col-span-2">
-            <PhoneNumberInput
-              label="Mobile Number"
-              register={register}
-              name="phoneNumber"
-              selectedCountry={selectedCountryCode}
-              setSelectedCountry={setSelectedCountryCode}
-              countries={countryCodes}
-              error={errors.phoneNumber?.message}
-              required={true}
-            />
-          </div>
+          
         </div>
       </div>
       {serverError && (
