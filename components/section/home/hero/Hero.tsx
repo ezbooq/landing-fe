@@ -5,7 +5,7 @@ import Button from "@/components/button/Button";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import PopUpModal from "@/components/popUpModal/PopUpModal";
-import Dashboard from "../../../../public/Dashboard.svg";
+import Dashboard from "../../../../public/Final Dashboard.svg";
 
 const Hero: React.FC = () => {
   const router = useRouter();

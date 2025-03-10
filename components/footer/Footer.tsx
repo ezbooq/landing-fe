@@ -8,10 +8,10 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import FooterColumn from "./FooterColumn";
-import Image from "next/image";
 import NavLink from "../navLink/NavLink";
 import Newsletter from "../newsletter/Newsletter";
 import Logo from "../../public/Logo.png";
+import Image from "next/image";
 const Footer: React.FC = () => {
   const columns = [
     {
@@ -71,11 +71,52 @@ const Footer: React.FC = () => {
           <div className="">
             <Image src={Logo} alt="Logo" width={120} height={50} />
             <h4 className="font-bold mt-3">Address</h4>
-            <p className="font-extralight text-sm">
-              New York, USA <br />
-              Melbourine, AU <br />
-              Colombo, SL
-            </p>
+            <div className="">
+              <div className="flex items-center gap-2">
+                <p className="font-extralight text-sm">
+                  United States of America
+                </p>
+                <Image
+                  src="https://flagcdn.com/w40/us.png"
+                  alt="USA Flag"
+                  width={22}
+                  height={16}
+                  className="mr-2"
+                />
+              </div>
+              <div className="flex items-center gap-2">
+                <p className="font-extralight text-sm">Australia</p>
+                <Image
+                  src="https://flagcdn.com/w40/au.png"
+                  alt="Australia Flag"
+                  width={22}
+                  height={16}
+                  className="mr-2"
+                />
+              </div>
+              <div className="flex items-center gap-2">
+                <p className="font-extralight text-sm">Sri Lanka</p>
+                <Image
+                  src="https://flagcdn.com/w40/lk.png"
+                  alt="Sri Lanka Flag"
+                  width={22}
+                  height={16}
+                  className="mr-2"
+                />
+              </div>
+            </div>
+            {/* <p className="font-extralight text-sm">
+              United States of America 🇺🇸 <br />
+              Australia{" "}
+              <img
+                src="https://flagcdn.com/16x12/au.png"
+                width="16"
+                height="12"
+                alt="Australia"
+              />{" "}
+              <br />
+              Sri Lanka 🇱🇰
+            </p> */}
             <h2 className="font-bold mt-3">Contact</h2>
             <p className="font-thin text-sm">
               USA - +1 (203) 267-9397 <br />
@@ -123,7 +164,10 @@ const Footer: React.FC = () => {
               >
                 Contact Us
               </NavLink>
-              <NavLink href="/register" className="underline underline-offset-2">
+              <NavLink
+                href="/register"
+                className="underline underline-offset-2"
+              >
                 Sign Up
               </NavLink>
             </div>

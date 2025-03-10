@@ -7,7 +7,7 @@ import PopUpModal from "@/components/popUpModal/PopUpModal";
 import Person1 from "../../../../public/Personimg1.jpg";
 import Person2 from "../../../../public/Personimg2.jpg";
 import Person3 from "../../../../public/Personimg3.jpg";
-import Person4 from "../../../../public/Personimg3.jpg";
+import Person4 from "../../../../public/Personimg4.jpg";
 
 const Team: React.FC = () => {
   const teamMembers = [

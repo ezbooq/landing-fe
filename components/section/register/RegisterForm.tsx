@@ -53,8 +53,8 @@ export default function RegisterForm() {
   const { showToast } = useToast();
 
   const formSchema = z.object({
-    firstname: z.string().nonempty("First name is required"),
-    lastname: z.string(),
+    firstName: z.string().nonempty("First name is required"),
+    lastName: z.string(),
     email: z
       .string()
       .nonempty("Email is required")
@@ -139,15 +139,15 @@ export default function RegisterForm() {
           <InputField
             register={register}
             label="First Name"
-            name="firstname"
-            errorMessage={errors.firstname?.message}
+            name="firstName"
+            errorMessage={errors.firstName?.message}
             required={true}
           />
           <InputField
             register={register}
             label="Last Name"
-            name="lastname"
-            errorMessage={errors.lastname?.message}
+            name="lastName"
+            errorMessage={errors.lastName?.message}
           />
           <div className="col-span-2">
             <InputField

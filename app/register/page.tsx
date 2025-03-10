@@ -1,6 +1,6 @@
 import Image from "next/image";
 import RegisterForm from "@/components/section/register/RegisterForm"; 
-import Dashboard from "../../public/Dashboard.svg";
+import Dashboard from "../../public/Final Dashboard.svg";
 
 export default function Register() {
   return (
