@@ -63,6 +63,16 @@ export default function AffiliateMarketer() {
               </Button>
             </div>
           </div>
+          <div className="flex justify-center mt-6">
+            <div className="w-full max-w-3xl aspect-video">
+              <iframe
+                className="w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/3-z6-c2WTKk?si=zxiZT5hEYlbhDKLj"
+                title="Introduction To WiseGPT"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
       <div className="max-w-7xl mx-auto py-10 p-5">
