@@ -111,7 +111,7 @@ const Features: React.FC = () => {
       <div className="text-center">
         <p className="text-lg sm:text-xl text-primary mb-5">Features</p>
         <h1 className="text-2xl sm:text-4xl text-black mb-6">
-          Powerful Features to Elevte Your workflow
+          Powerful Features to Elevate Your workflow
         </h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center gap-5 mb-14">

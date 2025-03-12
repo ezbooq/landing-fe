@@ -27,7 +27,7 @@ const ContactDetails = () => {
           community commitment! Ready to support your business needs.
         </p>
         <a className="underline underline-offset-2 text-center">
-          New York, USA; Melbourine, AU; Colombo, SL
+          Balitmore, Maryland, USA; Melbourine, AU; Colombo, SL
         </a>
       </div>
       <div className="flex flex-col gap-4 items-center sm:items-start mb-3">

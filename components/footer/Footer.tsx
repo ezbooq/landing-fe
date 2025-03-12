@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
   const socialIcons = [
     {
       icon: <FaFacebook size={21} />,
-      href: "https://www.facebook.com/ezbooqofficial",
+      href: "https://www.facebook.com/ezbooqofficiallive",
     },
     {
       icon: <FaInstagram size={21} />,
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col sm:flex-row justify-start  sm:justify-between sm:items-center gap-6 border-t border-gray-300 pt-6">
           <div className="">
             <Image src={Logo} alt="Logo" width={120} height={50} />
-            <h4 className="font-bold mt-3">Address</h4>
+            <h4 className="font-bold mt-3">Location</h4>
             <div className="">
               <div className="flex items-center gap-2">
                 <p className="font-extralight text-sm">
@@ -121,8 +121,8 @@ const Footer: React.FC = () => {
             <p className="font-thin text-sm">
               USA - +1 (203) 267-9397 <br />
               AUS - +61 485 982 386 <br />
-              ezbooq@gmail.com <br />
             </p>
+              <NavLink href="mailto:ezbooq@gmail.com">ezbooq@gmail.com</NavLink><br />
             <div className="flex space-x-4 mt-4">
               {socialIcons.map((social, index) => (
                 <NavLink

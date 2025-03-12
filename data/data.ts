@@ -290,7 +290,7 @@ export const Industries = [
   },
   {
     id: "16",
-    title: "All Tutors",
+    title: "Tutors",
     slug: "all-tutors",
     image: [Tutors],
     subTitle1: "Effortless Lesson Scheduling",
@@ -308,7 +308,7 @@ export const Industries = [
   },
   {
     id: "17",
-    title: "All Consultation",
+    title: "Consultation",
     slug: "all-consultation",
     image: [Consultation],
     subTitle1: "Simplified Appointment Booking",
@@ -326,7 +326,7 @@ export const Industries = [
   },
   {
     id: "18",
-    title: "All coaches",
+    title: "Coaches",
     slug: "all-coaches",
     image: [Coaches],
     subTitle1: "Integrated Session Scheduling",
