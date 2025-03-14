@@ -13,10 +13,10 @@ const ContactDetails = () => {
           to expert assistance is available round-the-clock.
         </p>
         <a
-          href="mailto:ezbooq@gmail.com"
+          href="mailto:contact@ezbooq.com"
           className="underline underline-offset-2"
         >
-          ezbooq@gmail.com
+          contact@ezbooq.com
         </a>
       </div>
       <div className="flex flex-col gap-4 items-center sm:items-start mb-3">
@@ -26,7 +26,7 @@ const ContactDetails = () => {
           Visit us at our trusted location, where professionalism meets
           community commitment! Ready to support your business needs.
         </p>
-        <a className="underline underline-offset-2 text-center">
+        <a className="underline underline-offset-2">
           Balitmore, Maryland, USA; Melbourine, AU; Colombo, SL
         </a>
       </div>

@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
       links: [
         { label: "Car Wash", href: "/industries/car-wash" },
         { label: "Home Cleaning", href: "/industries/home-cleaning" },
-        { label: "Spa / Saloon", href: "/industries/spa" },
-        { label: "Coaches / Tutors", href: "/industries/all-coaches" },
+        { label: "Saloon", href: "/industries/nail-saloon" },
+        { label: "Coach", href: "/industries/all-coaches" },
         { label: "View More", href: "/industries" },
       ],
     },
@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
               USA - +1 (203) 267-9397 <br />
               AUS - +61 485 982 386 <br />
             </p>
-              <NavLink href="mailto:ezbooq@gmail.com">ezbooq@gmail.com</NavLink><br />
+              <NavLink href="mailto:contact@ezbooq.com">contact@ezbooq.com</NavLink><br />
             <div className="flex space-x-4 mt-4">
               {socialIcons.map((social, index) => (
                 <NavLink
