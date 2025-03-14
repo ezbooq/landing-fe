@@ -254,8 +254,8 @@ export const Industries = [
   },
   {
     id: "14",
-    title: "Lawyers",
-    slug: "lawyers",
+    title: "Lawyer",
+    slug: "lawyer",
     image: [Lawyers],
     subTitle1: "Professional Appointment Management",
     description1:
@@ -290,8 +290,8 @@ export const Industries = [
   },
   {
     id: "16",
-    title: "Tutors",
-    slug: "all-tutors",
+    title: "Tutor",
+    slug: "tutor",
     image: [Tutors],
     subTitle1: "Effortless Lesson Scheduling",
     description1:
@@ -308,8 +308,8 @@ export const Industries = [
   },
   {
     id: "17",
-    title: "Consultation",
-    slug: "all-consultation",
+    title: "Consultant",
+    slug: "consultant",
     image: [Consultation],
     subTitle1: "Simplified Appointment Booking",
     description1:
@@ -326,8 +326,8 @@ export const Industries = [
   },
   {
     id: "18",
-    title: "Coaches",
-    slug: "all-coaches",
+    title: "Coach",
+    slug: "coach",
     image: [Coaches],
     subTitle1: "Integrated Session Scheduling",
     description1:
