@@ -6,8 +6,11 @@ export const countryCodes: Country[] = getCountries().map((code) => ({
   dialingCode: `+${getCountryCallingCode(code)}`,
 }));
 
-export const countries: Option[] = getCountries().map((code) => ({
-  id: code,
-  name: regionNames.of(code.toUpperCase()) ?? code,
-  image: `http://purecatamphetamine.github.io/country-flag-icons/3x2/${code}.svg`,
-}));
+export const countries: Option[] = getCountries()
+  .map((code) => ({
+    id: code,
+    name: regionNames.of(code.toUpperCase()) ?? code,
+    image: `http://purecatamphetamine.github.io/country-flag-icons/3x2/${code}.svg`,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name)); // Sort by country name
+
