@@ -33,13 +33,13 @@ const IndustryList = [
   { id: "SPA", name: "Spa" },
   { id: "MASSAGE", name: "Massage" },
   { id: "GUTTER_CLEANING", name: "Gutter Cleaning" },
-  { id: "LAWYERS", name: "Lawyers" },
-  { id: "ACCOUNTANTS", name: "Accountants" },
-  { id: "ALL_TUTORS", name: "All Tutors" },
-  { id: "ALL_CONSULTATION", name: "All Consultation" },
+  { id: "LAWYERS", name: "Lawyer" },
+  { id: "ACCOUNTANTS", name: "Accountant" },
+  { id: "ALL_TUTORS", name: "Tutor" },
+  { id: "ALL_CONSULTATION", name: "Consultant" },
   {
     id: "ALL_COACHES",
-    name: "All Coaches (online coach, personal trainers, nutrition coaches, etc...)",
+    name: "Coach (online coach, personal trainers, nutrition coaches, etc...)",
   },
   { id: "OTHERS", name: "Others" },
 ];
