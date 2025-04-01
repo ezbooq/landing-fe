@@ -1,6 +1,6 @@
 import { HiOutlineMail } from "react-icons/hi";
 import { PiChatTextBold } from "react-icons/pi";
-import { FiPhone } from "react-icons/fi";
+// import { FiPhone } from "react-icons/fi";
 
 const ContactDetails = () => {
   return (
