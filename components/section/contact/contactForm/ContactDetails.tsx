@@ -4,7 +4,7 @@ import { FiPhone } from "react-icons/fi";
 
 const ContactDetails = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 max-w-7xl mx-auto p-4 gap-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 max-w-7xl mx-auto p-4 gap-3">
       <div className="flex flex-col items-center sm:items-start gap-4 mb-3">
         <HiOutlineMail className="text-primary" size={30} />
         <h2 className="text-xl font-semibold">Email</h2>
@@ -30,7 +30,7 @@ const ContactDetails = () => {
           Balitmore, Maryland, USA; Melbourine, AU; Colombo, SL
         </a>
       </div>
-      <div className="flex flex-col gap-4 items-center sm:items-start mb-3">
+      {/* <div className="flex flex-col gap-4 items-center sm:items-start mb-3">
         <FiPhone className="text-primary" size={30} />
         <h2 className="text-xl font-semibold">Phone</h2>
         <p className="text-sm text-black text-center sm:text-left">
@@ -46,7 +46,7 @@ const ContactDetails = () => {
         <a href="tel:+61 485 982 386" className="underline underline-offset-2">
           AUS - +61 485 982 386
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

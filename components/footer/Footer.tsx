@@ -118,11 +118,14 @@ const Footer: React.FC = () => {
               Sri Lanka 🇱🇰
             </p> */}
             <h2 className="font-bold mt-3">Contact</h2>
-            <p className="font-thin text-sm">
+            {/* <p className="font-thin text-sm">
               USA - +1 (203) 267-9397 <br />
               AUS - +61 485 982 386 <br />
-            </p>
-              <NavLink href="mailto:contact@ezbooq.com">contact@ezbooq.com</NavLink><br />
+            </p> */}
+            <NavLink href="mailto:contact@ezbooq.com">
+              contact@ezbooq.com
+            </NavLink>
+            <br />
             <div className="flex space-x-4 mt-4">
               {socialIcons.map((social, index) => (
                 <NavLink
